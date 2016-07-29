@@ -172,7 +172,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -182,7 +182,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -248,7 +248,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-07-29T14:03:44+08:00" content="2016-07-29">
               2016-07-29
             </time>
@@ -283,22 +283,19 @@
 <p>无插件不神器：陆续添加我喜欢的插件说明。安装插件前期了解参见：<strong>[Sublime Text 3使用技巧之（一：预热）]</strong></p>
 </blockquote>
 <hr>
-<p>[TOC]</p>
-<p>##Python环境配置</p>
-<ul>
+<h2 id="Python环境配置"><a href="#Python环境配置" class="headerlink" title="Python环境配置"></a>Python环境配置</h2><ul>
 <li>安装<strong>SublimeREPL</strong>插件<blockquote>
 <p>在package control中输入<code>SublimeREPL</code>安装，安装完成后会显示在菜单中<strong>Tools</strong>→<strong>SublimeREPL</strong>→<strong>Python</strong>，就会将python IDE集成在<strong>ST</strong>中<br>###快捷键设置<br>快捷键的作用就是代替每次打开Python用鼠标点击菜单的痛苦。<br>打开Preferences-&gt;Key Bindings-User，复制代码：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[&#123;<span class="string">"keys"</span>:[<span class="string">"f1"</span>],</div><div class="line"><span class="string">"caption"</span>: <span class="string">"SublimeREPL: Python - RUN current file"</span>,</div><div class="line"><span class="string">"command"</span>: <span class="string">"run_existing_window_command"</span>, <span class="string">"args"</span>:</div><div class="line">&#123;<span class="string">"id"</span>: <span class="string">"repl_python_run"</span>,<span class="string">"file"</span>: <span class="string">"config/Python/Main.sublime-menu"</span>&#125;</div><div class="line">&#125;]</div></pre></td></tr></table></figure>
 </blockquote>
 </li>
 </ul>
-<p>###运行Python脚本<br>新建或者打开.py文件，然后直接使用键盘组合：<code>Ctrl + B</code>运行Python代码。</p>
+<h3 id="运行Python脚本"><a href="#运行Python脚本" class="headerlink" title="运行Python脚本"></a>运行Python脚本</h3><p>新建或者打开.py文件，然后直接使用键盘组合：<code>Ctrl + B</code>运行Python代码。</p>
 <hr>
-<p>##运行bat文件（cmd命令）<br><strong>Tools</strong> -&gt; <strong>Build System</strong> -&gt; <strong>New Build System…</strong>，在打开的文件中输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="string">"cmd"</span>: <span class="string">"<span class="variable">$file</span>"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="运行bat文件（cmd命令）"><a href="#运行bat文件（cmd命令）" class="headerlink" title="运行bat文件（cmd命令）"></a>运行bat文件（cmd命令）</h2><p><strong>Tools</strong> -&gt; <strong>Build System</strong> -&gt; <strong>New Build System…</strong>，在打开的文件中输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="string">"cmd"</span>: <span class="string">"<span class="variable">$file</span>"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>然后保存为<strong>cmd.sublime-build</strong>即可，这是<strong>Tools</strong> -&gt; <strong>Build System</strong>菜单中会出现一个<strong>cmd</strong>。打开一个bat文件然后利用组合键：<code>Ctrl + B</code>运行，或许运行前需要选择<strong>Build System</strong>为<strong>cmd</strong></p>
 <hr>
-<p>##配置Markdown</p>
-
+<h2 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h2>
           
         
       
@@ -360,7 +357,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-07-29T10:48:58+08:00" content="2016-07-29">
               2016-07-29
             </time>
@@ -470,7 +467,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -517,7 +514,7 @@
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
