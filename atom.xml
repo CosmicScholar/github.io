@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-29T11:47:44.052Z</updated>
+  <updated>2016-07-29T13:07:31.668Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>Sublime Text 3使用技巧之（二：常用插件）</title>
     <link href="http://yoursite.com/2016/07/29/new-blog/"/>
     <id>http://yoursite.com/2016/07/29/new-blog/</id>
-    <published>2016-07-29T06:03:44.745Z</published>
-    <updated>2016-07-29T11:47:44.052Z</updated>
+    <published>2016-07-29T13:06:00.000Z</published>
+    <updated>2016-07-29T13:07:31.668Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>无插件不神器：陆续添加我喜欢的插件说明。安装插件前期了解参见：<strong>[Sublime Text 3使用技巧之（一：预热）]</strong></p>
@@ -50,6 +50,10 @@
     
     </summary>
     
+      <category term="经验总结" scheme="http://yoursite.com/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="SublimeText" scheme="http://yoursite.com/tags/SublimeText/"/>
     
   </entry>
   
