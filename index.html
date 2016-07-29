@@ -236,7 +236,7 @@
               
                 
                 <a class="post-title-link" href="/2016/07/29/new-blog/" itemprop="url">
-                  如何在windows下搭建个人博客
+                  Sublime Text 3使用技巧之（二：常用插件）
                 </a>
               
             
@@ -279,14 +279,25 @@
       
         
           
-            <p>一直以来想拥有一个个人博客，方便总结自己的经验并想有兴趣的同行分享，一开始觉得有点折腾，挺麻烦的，可是有颗好奇不死之心，最终还是找到了解决方案，那就是：<strong><a href="http://www.jianshu.com/p/985d07d88ef4" target="_blank" rel="external">Hexo</a></strong>+<strong><a href="https://github.com/CosmicScholar" target="_blank" rel="external">Github</a></strong></p>
+            <blockquote>
+<p>无插件不神器：陆续添加我喜欢的插件说明。安装插件前期了解参见：<strong>[Sublime Text 3使用技巧之（一：预热）]</strong></p>
+</blockquote>
 <hr>
 <p>[TOC]</p>
-<hr>
-<p>##准备工作<br>在利用hexo和github搭建个人博客之前，如果对二者不甚了解，最好先百度一下，大致有个了解。</p>
+<p>##Python环境配置</p>
 <ul>
-<li>注册一个<a href="https://github.com/" target="_blank" rel="external">Github账号</a><img src="./8b13632762d0f703d0ad4cbe08fa513d2697c5b1.jpg" alt="Alt text|40x0"><br>我的账号是<a href="https://cosmicscholar.github.io/gzk/" target="_blank" rel="external">CosmicScholar</a></li>
+<li>安装<strong>SublimeREPL</strong>插件<blockquote>
+<p>在package control中输入<code>SublimeREPL</code>安装，安装完成后会显示在菜单中<strong>Tools</strong>→<strong>SublimeREPL</strong>→<strong>Python</strong>，就会将python IDE集成在<strong>ST</strong>中<br>###快捷键设置<br>快捷键的作用就是代替每次打开Python用鼠标点击菜单的痛苦。<br>打开Preferences-&gt;Key Bindings-User，复制代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[&#123;<span class="string">"keys"</span>:[<span class="string">"f1"</span>],</div><div class="line"><span class="string">"caption"</span>: <span class="string">"SublimeREPL: Python - RUN current file"</span>,</div><div class="line"><span class="string">"command"</span>: <span class="string">"run_existing_window_command"</span>, <span class="string">"args"</span>:</div><div class="line">&#123;<span class="string">"id"</span>: <span class="string">"repl_python_run"</span>,<span class="string">"file"</span>: <span class="string">"config/Python/Main.sublime-menu"</span>&#125;</div><div class="line">&#125;]</div></pre></td></tr></table></figure>
+</blockquote>
+</li>
 </ul>
+<p>###运行Python脚本<br>新建或者打开.py文件，然后直接使用键盘组合：<code>Ctrl + B</code>运行Python代码。</p>
+<hr>
+<p>##运行bat文件（cmd命令）<br><strong>Tools</strong> -&gt; <strong>Build System</strong> -&gt; <strong>New Build System…</strong>，在打开的文件中输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="string">"cmd"</span>: <span class="string">"<span class="variable">$file</span>"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>然后保存为<strong>cmd.sublime-build</strong>即可，这是<strong>Tools</strong> -&gt; <strong>Build System</strong>菜单中会出现一个<strong>cmd</strong>。打开一个bat文件然后利用组合键：<code>Ctrl + B</code>运行，或许运行前需要选择<strong>Build System</strong>为<strong>cmd</strong></p>
+<hr>
+<p>##配置Markdown</p>
 
           
         
@@ -465,13 +476,6 @@
 
           
 
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Tags</span>
-              </a>
-            </div>
           
 
         </nav>
