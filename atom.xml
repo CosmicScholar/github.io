@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-29T13:07:31.668Z</updated>
+  <updated>2016-07-29T13:11:07.557Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/07/29/new-blog/"/>
     <id>http://yoursite.com/2016/07/29/new-blog/</id>
     <published>2016-07-29T13:06:00.000Z</published>
-    <updated>2016-07-29T13:07:31.668Z</updated>
+    <updated>2016-07-29T13:11:07.557Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>无插件不神器：陆续添加我喜欢的插件说明。安装插件前期了解参见：<strong>[Sublime Text 3使用技巧之（一：预热）]</strong></p>
@@ -28,7 +28,8 @@
 <hr>
 <h2 id="Python环境配置"><a href="#Python环境配置" class="headerlink" title="Python环境配置"></a>Python环境配置</h2><ul>
 <li>安装<strong>SublimeREPL</strong>插件<blockquote>
-<p>在package control中输入<code>SublimeREPL</code>安装，安装完成后会显示在菜单中<strong>Tools</strong>→<strong>SublimeREPL</strong>→<strong>Python</strong>，就会将python IDE集成在<strong>ST</strong>中<br>###快捷键设置<br>快捷键的作用就是代替每次打开Python用鼠标点击菜单的痛苦。<br>打开Preferences-&gt;Key Bindings-User，复制代码：</p>
+<p>在package control中输入<code>SublimeREPL</code>安装，安装完成后会显示在菜单中<strong>Tools</strong>→<strong>SublimeREPL</strong>→<strong>Python</strong>，就会将python IDE集成在<strong>ST</strong>中</p>
+<h3 id="快捷键设置"><a href="#快捷键设置" class="headerlink" title="快捷键设置"></a>快捷键设置</h3><p>快捷键的作用就是代替每次打开Python用鼠标点击菜单的痛苦。<br>打开Preferences-&gt;Key Bindings-User，复制代码：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[&#123;<span class="string">"keys"</span>:[<span class="string">"f1"</span>],</div><div class="line"><span class="string">"caption"</span>: <span class="string">"SublimeREPL: Python - RUN current file"</span>,</div><div class="line"><span class="string">"command"</span>: <span class="string">"run_existing_window_command"</span>, <span class="string">"args"</span>:</div><div class="line">&#123;<span class="string">"id"</span>: <span class="string">"repl_python_run"</span>,<span class="string">"file"</span>: <span class="string">"config/Python/Main.sublime-menu"</span>&#125;</div><div class="line">&#125;]</div></pre></td></tr></table></figure>
 </blockquote>
 </li>
@@ -50,7 +51,7 @@
     
     </summary>
     
-      <category term="经验总结" scheme="http://yoursite.com/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/"/>
+      <category term="categorie1" scheme="http://yoursite.com/categories/categorie1/"/>
     
     
       <category term="SublimeText" scheme="http://yoursite.com/tags/SublimeText/"/>
