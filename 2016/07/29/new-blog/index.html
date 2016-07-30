@@ -104,7 +104,7 @@ Python环境配置
 安装SublimeREPL插件
 在package control中输入SublimeREPL安装，安装完成后会显示在菜单中Tools→SublimeREPL→Python，就会将python IDE集成在ST中
 快捷键设置快捷键的作用就是代替每次打开Py">
-<meta property="og:updated_time" content="2016-07-30T04:33:17.262Z">
+<meta property="og:updated_time" content="2016-07-30T04:36:27.100Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sublime Text 3使用技巧之（二：常用插件）">
 <meta name="twitter:description" content="无插件不神器：陆续添加我喜欢的插件说明。安装插件前期了解参见：[Sublime Text 3使用技巧之（一：预热）]
@@ -362,23 +362,21 @@ Python环境配置
 <h2 id="运行bat文件（cmd命令）"><a href="#运行bat文件（cmd命令）" class="headerlink" title="运行bat文件（cmd命令）"></a>运行bat文件（cmd命令）</h2><p><strong>Tools</strong> -&gt; <strong>Build System</strong> -&gt; <strong>New Build System…</strong>，在打开的文件中输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="string">"cmd"</span>: <span class="string">"<span class="variable">$file</span>"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>然后保存为<strong>cmd.sublime-build</strong>即可，这是<strong>Tools</strong> -&gt; <strong>Build System</strong>菜单中会出现一个<strong>cmd</strong>。打开一个bat文件然后利用组合键：<code>Ctrl + B</code>运行，或许运行前需要选择<strong>Build System</strong>为<strong>cmd</strong></p>
 <hr>
-<h2 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h2><p>##Markdown环境配置</p>
-<blockquote>
+<h2 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h2><h2 id="Markdown环境配置"><a href="#Markdown环境配置" class="headerlink" title="Markdown环境配置"></a>Markdown环境配置</h2><blockquote>
 <p>所需插件：<strong><a href="https://github.com/SublimeText-Markdown/MarkdownEditing" target="_blank" rel="external">MarkdownEditing</a></strong>, <strong><a href="https://github.com/revolunet/sublimetext-markdown-preview" target="_blank" rel="external">MarkdownPreview</a></strong>, <strong><a href="https://github.com/jonschlinkert/sublime-monokai-extended" target="_blank" rel="external">Monokai Extened</a></strong>, <strong><a href="http://theo.im/OmniMarkupPreviewer/" target="_blank" rel="external">OmniMarkupPreviwer</a></strong>, <strong><a href="https://github.com/vkocubinsky/SublimeTableEditor" target="_blank" rel="external">TableEditor</a></strong></p>
 </blockquote>
-<p>###MarkdownEditing<br>支持Markdown语法高亮；支持Github Favored Markdown语法，其实没啥用，并不好看。<strong>可以不安装</strong></p>
-<p>###MarkdownPreview<br>按<code>Ctrl + B</code>生成网页HTML，在前面添加<code>[TOC]</code>可以自动生成目录，但是这种方法会在被预览的<code>.md</code>文件所在目录下生成<code>.html</code>文件，这并不是我们想要的，在用hexo推送博客的时候会增大<code>_posts</code>目录体重，<strong>可以不安装</strong></p>
-<p>###Monokai Extened<br>这是一个很不错的插件，是Monokai主题的扩展，不仅支持Markdown同时也不会改变其他语言的Monokai主题样式。本人很喜欢Monokai主题。</p>
-<p>###OmniMarkupPreviwer<br>此插件是本人推荐使用的，可以在浏览器中实时预览Markdown，因为我一般使用三屏工作，体验还不错。在<strong><a href="http://gmt.soest.hawaii.edu/" target="_blank" rel="external">gmt</a></strong>和<strong><a href="http://matplotlib.org/" target="_blank" rel="external">python</a></strong>做图的时候我也是用这种一边写代码一遍开着<strong><a href="http://www.sumatrapdfreader.org/free-pdf-reader.html" target="_blank" rel="external">SumatraPdf</a></strong>进行pdf预览。<br>快捷键：<code>Ctrl + Alt + O</code></p>
+<h3 id="MarkdownEditing"><a href="#MarkdownEditing" class="headerlink" title="MarkdownEditing"></a>MarkdownEditing</h3><p>支持Markdown语法高亮；支持Github Favored Markdown语法，其实没啥用，并不好看。<strong>可以不安装</strong></p>
+<h3 id="MarkdownPreview"><a href="#MarkdownPreview" class="headerlink" title="MarkdownPreview"></a>MarkdownPreview</h3><p>按<code>Ctrl + B</code>生成网页HTML，在前面添加<code>[TOC]</code>可以自动生成目录，但是这种方法会在被预览的<code>.md</code>文件所在目录下生成<code>.html</code>文件，这并不是我们想要的，在用hexo推送博客的时候会增大<code>_posts</code>目录体重，<strong>可以不安装</strong></p>
+<h3 id="Monokai-Extened"><a href="#Monokai-Extened" class="headerlink" title="Monokai Extened"></a>Monokai Extened</h3><p>这是一个很不错的插件，是Monokai主题的扩展，不仅支持Markdown同时也不会改变其他语言的Monokai主题样式。本人很喜欢Monokai主题。</p>
+<h3 id="OmniMarkupPreviwer"><a href="#OmniMarkupPreviwer" class="headerlink" title="OmniMarkupPreviwer"></a>OmniMarkupPreviwer</h3><p>此插件是本人推荐使用的，可以在浏览器中实时预览Markdown，因为我一般使用三屏工作，体验还不错。在<strong><a href="http://gmt.soest.hawaii.edu/" target="_blank" rel="external">gmt</a></strong>和<strong><a href="http://matplotlib.org/" target="_blank" rel="external">python</a></strong>做图的时候我也是用这种一边写代码一遍开着<strong><a href="http://www.sumatrapdfreader.org/free-pdf-reader.html" target="_blank" rel="external">SumatraPdf</a></strong>进行pdf预览。<br>快捷键：<code>Ctrl + Alt + O</code></p>
 <ul>
 <li>支持Latex公式<blockquote>
 <p>在OmniMarkupPreviewer的设置中(<code>C:\Users\zhiku\AppData\Roaming\Sublime Text 3\Packages\OmniMarkupPreviewer\OmniMarkupPreviewer.sublime-settings</code>)将mathjax_enabled设置为:<code>True</code>，之后MathJax会在后端自动下载；如果下载网速比较慢，可以手动<a href="https://github.com/downloads/timonwong/OmniMarkupPreviewer/mathjax.zip" target="_blank" rel="external">下载</a>，然后解压到：<code>C:\Users\zhiku\AppData\Roaming\Sublime Text 3\Packages\OmniMarkupPreviewer\public</code>，之后在<code>C:\Users\zhiku\AppData\Roaming\Sublime Text 3\Packages\OmniMarkupPreviewer</code>中创建一个空的文件：<code>MATHJAX.DOWNLOADED</code>即可。更多设置可参考<a href="http://blog.leanote.com/post/54bfa17b8404f03097000000" target="_blank" rel="external">MacPlay</a>博文。</p>
 </blockquote>
 </li>
 </ul>
-<p>###TableEditor<br>这个插件也是推荐的，因为Markdown写表格确实有点无奈，这个插件可以有一定帮助，用<code>Tab</code>键可以自动完成对齐。使用之前，需要使用<code>Ctrl + shift + P</code>打开功能：<strong>Table Editor: Enable for current syntax or Table Editor: Enable for current view or “Table Editor: Set table syntax … for current view”</strong>。</p>
-<p>##小记</p>
-<ul>
+<h3 id="TableEditor"><a href="#TableEditor" class="headerlink" title="TableEditor"></a>TableEditor</h3><p>这个插件也是推荐的，因为Markdown写表格确实有点无奈，这个插件可以有一定帮助，用<code>Tab</code>键可以自动完成对齐。使用之前，需要使用<code>Ctrl + shift + P</code>打开功能：<strong>Table Editor: Enable for current syntax or Table Editor: Enable for current view or “Table Editor: Set table syntax … for current view”</strong>。</p>
+<h2 id="小记"><a href="#小记" class="headerlink" title="小记"></a>小记</h2><ul>
 <li>卸载插件：<code>Ctrl + Shift + P</code>-&gt;<code>remove</code>-&gt;输入需要卸载的插件名</li>
 <li>插件安装路径：<code>C:\Users\zhiku\AppData\Roaming\Sublime Text 3\Packages</code></li>
 </ul>
@@ -561,7 +559,7 @@ Python环境配置
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python环境配置"><span class="nav-number">1.</span> <span class="nav-text">Python环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#快捷键设置"><span class="nav-number">1.1.</span> <span class="nav-text">快捷键设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行Python脚本"><span class="nav-number">1.2.</span> <span class="nav-text">运行Python脚本</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行bat文件（cmd命令）"><span class="nav-number">2.</span> <span class="nav-text">运行bat文件（cmd命令）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置Git"><span class="nav-number">3.</span> <span class="nav-text">配置Git</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python环境配置"><span class="nav-number">1.</span> <span class="nav-text">Python环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#快捷键设置"><span class="nav-number">1.1.</span> <span class="nav-text">快捷键设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行Python脚本"><span class="nav-number">1.2.</span> <span class="nav-text">运行Python脚本</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行bat文件（cmd命令）"><span class="nav-number">2.</span> <span class="nav-text">运行bat文件（cmd命令）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置Git"><span class="nav-number">3.</span> <span class="nav-text">配置Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown环境配置"><span class="nav-number">4.</span> <span class="nav-text">Markdown环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MarkdownEditing"><span class="nav-number">4.1.</span> <span class="nav-text">MarkdownEditing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MarkdownPreview"><span class="nav-number">4.2.</span> <span class="nav-text">MarkdownPreview</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Monokai-Extened"><span class="nav-number">4.3.</span> <span class="nav-text">Monokai Extened</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OmniMarkupPreviwer"><span class="nav-number">4.4.</span> <span class="nav-text">OmniMarkupPreviwer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TableEditor"><span class="nav-number">4.5.</span> <span class="nav-text">TableEditor</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小记"><span class="nav-number">5.</span> <span class="nav-text">小记</span></a></li></ol></div>
             
           </div>
         </section>
