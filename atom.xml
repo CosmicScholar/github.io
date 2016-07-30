@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-30T08:58:51.990Z</updated>
+  <updated>2016-07-30T15:09:56.139Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度</title>
+    <link href="http://yoursite.com/2016/07/31/20160731/"/>
+    <id>http://yoursite.com/2016/07/31/20160731/</id>
+    <published>2016-07-31T13:06:00.000Z</published>
+    <updated>2016-07-30T15:09:56.139Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Sensitivity of seafloor bathymetry to climate-driven fluctuations in mid-ocean ridge magma supply</strong></p>
+<p>作者：<strong>J.-A. Olive, et. al.</strong><br>期刊：<strong><a href="http://science.sciencemag.org/content/350/6258/310.short" target="_blank" rel="external">Science</a></strong></p>
+<hr>
+<p><strong>摘要</strong>：最近有研究表明，在洋中脊形成的海底地形（纹理）特征记录了由海平面变化引起的洋脊岩浆供应的快速（23 ky. ~ 100 ky.）波动，因为海平面变化会对洋底之下的地幔熔融产物有一定调节作用。我们利用断裂和岩浆侵位的定量模型证明了：实际上，海底形态的形成过程对于岩浆供应变化起到了低通滤波作用。</p>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;Sensitivity of seafloor bathymetry to climate-driven fluctuations in mid-ocean ridge magma supply&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;作者：&lt;strong&gt;J.-A
+    
+    </summary>
+    
+      <category term="学术前沿" scheme="http://yoursite.com/categories/%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF/"/>
+    
+    
+      <category term="地球物理" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/"/>
+    
+      <category term="地球动力学" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
+    
+      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
+    
+  </entry>
   
   <entry>
     <title>Sublime Text 3使用技巧之（二：常用插件）</title>
