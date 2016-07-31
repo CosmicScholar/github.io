@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-31T04:22:44.071Z</updated>
+  <updated>2016-07-31T05:23:34.503Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,19 +20,21 @@
     <link href="http://yoursite.com/2016/07/30/20160731/"/>
     <id>http://yoursite.com/2016/07/30/20160731/</id>
     <published>2016-07-30T14:10:00.000Z</published>
-    <updated>2016-07-31T04:22:44.071Z</updated>
+    <updated>2016-07-31T05:23:34.503Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Sensitivity of seafloor bathymetry to climate-driven fluctuations in mid-ocean ridge magma supply</strong></p>
 <p>作者：<strong>J.-A. Olive, et. al.</strong><br>期刊：<strong><a href="http://science.sciencemag.org/content/350/6258/310.short" target="_blank" rel="external">Science</a></strong></p>
 <hr>
 <p><strong>摘要</strong>：最近有研究表明，在洋中脊形成的海底地形（纹理）特征记录了由海平面变化引起的洋脊岩浆供应的快速（23 ky. ~ 100 ky.）波动，因为海平面变化会对洋底之下的地幔熔融产物有一定调节作用。我们利用断裂和岩浆侵位的定量模型证明了：实际上，海底形态的形成过程对于岩浆供应变化，周期小于100 ky. 的强阻尼波动起到了低通滤波作用。我们的研究结果表明，</p>
-<hr>
+<a id="more"></a>
 ]]></content>
     
     <summary type="html">
     
       &lt;p&gt;&lt;strong&gt;Sensitivity of seafloor bathymetry to climate-driven fluctuations in mid-ocean ridge magma supply&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;作者：&lt;strong&gt;J.-A
+&lt;p&gt;作者：&lt;strong&gt;J.-A. Olive, et. al.&lt;/strong&gt;&lt;br&gt;期刊：&lt;strong&gt;&lt;a href=&quot;http://science.sciencemag.org/content/350/6258/310.short&quot;&gt;Science&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;摘要&lt;/strong&gt;：最近有研究表明，在洋中脊形成的海底地形（纹理）特征记录了由海平面变化引起的洋脊岩浆供应的快速（23 ky. ~ 100 ky.）波动，因为海平面变化会对洋底之下的地幔熔融产物有一定调节作用。我们利用断裂和岩浆侵位的定量模型证明了：实际上，海底形态的形成过程对于岩浆供应变化，周期小于100 ky. 的强阻尼波动起到了低通滤波作用。我们的研究结果表明，&lt;/p&gt;
     
     </summary>
     
@@ -52,12 +54,12 @@
     <link href="http://yoursite.com/2016/07/29/new-blog/"/>
     <id>http://yoursite.com/2016/07/29/new-blog/</id>
     <published>2016-07-29T13:06:00.000Z</published>
-    <updated>2016-07-30T08:58:51.990Z</updated>
+    <updated>2016-07-31T05:25:37.745Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>无插件不神器：陆续添加我喜欢的插件说明。安装插件前期了解参见：<strong>[Sublime Text 3使用技巧之（一：预热）]</strong></p>
 </blockquote>
-<hr>
+<a id="more"></a>
 <h2 id="Python环境配置"><a href="#Python环境配置" class="headerlink" title="Python环境配置"></a>Python环境配置</h2><ul>
 <li>安装<strong>SublimeREPL</strong>插件<blockquote>
 <p>在package control中输入<code>SublimeREPL</code>安装，安装完成后会显示在菜单中<strong>Tools</strong>→<strong>SublimeREPL</strong>→<strong>Python</strong>，就会将python IDE集成在<strong>ST</strong>中</p>
@@ -96,8 +98,6 @@
       &lt;blockquote&gt;
 &lt;p&gt;无插件不神器：陆续添加我喜欢的插件说明。安装插件前期了解参见：&lt;strong&gt;[Sublime Text 3使用技巧之（一：预热）]&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;Python环境配置&quot;&gt;&lt;a hr
     
     </summary>
     
