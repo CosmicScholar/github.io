@@ -873,15 +873,15 @@ header nav ul li a:hover {
   min-height: 400px;
 }
 ::selection {
-  background: #33a183;
+  background: #4cd964;
   color: #fff;
 }
 ::-moz-selection {
-  background: #33a183;
+  background: #4cd964;
   color: #fff;
 }
 ::-webkit-selection {
-  background: #33a183;
+  background: #4cd964;
   color: #fff;
 }
 .post,
