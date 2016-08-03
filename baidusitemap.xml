@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/08/03/figure_python/</loc>
+    <lastmod>2016-08-03T09:10:29.515Z</lastmod>
+    <data>
+        <display>
+        <title>Python精美作图</title>
+        <pubTime>2016-08-03T01:29:00.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>优美作图</tag>
+         
+         
+           
+             
+              <breadCrumb title="科研经验" url="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/08/03/SCI_Python/</loc>
-    <lastmod>2016-08-03T02:13:22.650Z</lastmod>
+    <lastmod>2016-08-03T04:22:31.348Z</lastmod>
     <data>
         <display>
         <title>Python数据分析</title>

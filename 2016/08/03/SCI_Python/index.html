@@ -17,7 +17,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/08/03/SCI_Python/index.html">
 <meta property="og:site_name" content="九天学者">
 <meta property="og:description" content="Matlab数据处理方便，但是作图实在是无力吐槽；C/C++，还有Fortran写大型的数据分析程序或高性计算还不错，但是可是化功能几乎没有。有了Python，两者兼备，既有丰富的数据处理函数库（比如numpy,scipy等，既有fft方面的也有小波方面的），也有精美的绘图函数库（如matplotlib），如果不进行大型的高性（并行）计算，强烈推荐科研过程中引入Python，如虎添翼。">
-<meta property="og:updated_time" content="2016-08-03T02:13:22.650Z">
+<meta property="og:updated_time" content="2016-08-03T04:22:31.348Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python数据分析">
 <meta name="twitter:description" content="Matlab数据处理方便，但是作图实在是无力吐槽；C/C++，还有Fortran写大型的数据分析程序或高性计算还不错，但是可是化功能几乎没有。有了Python，两者兼备，既有丰富的数据处理函数库（比如numpy,scipy等，既有fft方面的也有小波方面的），也有精美的绘图函数库（如matplotlib），如果不进行大型的高性（并行）计算，强烈推荐科研过程中引入Python，如虎添翼。">
@@ -100,7 +100,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#自定义函数"><span class="toc-number">1.</span> <span class="toc-text">自定义函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#读取数据"><span class="toc-number">2.</span> <span class="toc-text">读取数据</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#自定义函数"><span class="toc-number">1.</span> <span class="toc-text">自定义函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#读取数据"><span class="toc-number">2.</span> <span class="toc-text">读取数据</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#求频谱"><span class="toc-number">3.</span> <span class="toc-text">求频谱</span></a></li></ol>
 		
 		</div>
 		
@@ -111,6 +111,7 @@
 <p>Python自定义函数返回值支持返回多个参数，包括列表，字典等，比如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#定义</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_func</span><span class="params">(x,y,z)</span>:</span></div><div class="line">	<span class="keyword">return</span> x,y,z</div><div class="line"><span class="comment">#调用</span></div><div class="line">x=<span class="number">1</span></div><div class="line">y=<span class="number">2</span></div><div class="line">z=<span class="number">3</span></div><div class="line">x0,y0,z0=_func(x,y,z)</div></pre></td></tr></table></figure></p>
 <h1 id="读取数据"><a href="#读取数据" class="headerlink" title="读取数据"></a>读取数据</h1><p>通常我们处理的数据分为二维数据和三维数据，二维数据也就是通常所说的剖面数据，一般存储形式为n列的文本文件，比如我要读取一条水深剖面数据，其存储格式为：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="number">0</span>	<span class="number">-2696.041808</span>	</div><div class="line"><span class="number">500</span>	<span class="number">-2698.925123</span>	</div><div class="line"><span class="number">1000</span>	<span class="number">-2702.703325</span>	</div><div class="line"><span class="number">1500</span>	<span class="number">-2707.372416</span>	</div><div class="line"><span class="number">2000</span>	<span class="number">-2712.638406</span>	</div><div class="line"><span class="number">2500</span>	<span class="number">-2719.304509</span>	</div><div class="line"><span class="number">3000</span>	<span class="number">-2726.121160</span>	</div><div class="line"><span class="number">3500</span>	<span class="number">-2734.344562</span>	</div><div class="line">......		......</div></pre></td></tr></table></figure></p>
 <p>第一列是距离，第二列是水深。读取文件我喜欢用<code>linecache</code>，这个包支持大文件读取，速度非常快，也不折腾别的了，反正现在计算机资源很多，不追求性能更优的话暂且就用这个吧。自定义一个读取文件返回数据数组的函数：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -*- coding: utf-8 -*-</span></div><div class="line"><span class="keyword">import</span> linecache</div><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"></div><div class="line"><span class="comment">#读取剖面数据</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_ReadData2d</span><span class="params">(filename,col_x,col_y)</span>:</span></div><div class="line">	AllData = linecache.getlines(filename)</div><div class="line">	x=np.linspace(<span class="number">0</span>,<span class="number">1.0</span>,len(AllData))</div><div class="line">	y=np.linspace(<span class="number">0</span>,<span class="number">1.0</span>,len(AllData))</div><div class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,len(AllData)):</div><div class="line">		LineData=AllData[i]</div><div class="line">		x[i]=(float(LineData.split()[col_x]))</div><div class="line">		y[i]=(float(LineData.split()[col_y]))</div><div class="line">	<span class="comment"># 清除缓存,关闭文件</span></div><div class="line">	linecache .clearcache()</div><div class="line"><span class="comment">#调用</span></div><div class="line">filename_topo=<span class="string">"profile1_etopo1_500.dat"</span></div><div class="line">x,y=_ReadData2d(filename_topo,<span class="number">0</span>,<span class="number">1</span>)</div><div class="line"><span class="keyword">print</span> x,y</div></pre></td></tr></table></figure></p>
+<h1 id="求频谱"><a href="#求频谱" class="headerlink" title="求频谱"></a>求频谱</h1><p>首先根据读取的数据计算频率范围，也就是$f$向量，只需要自变量$x$两个量即可：采样间隔；采样个数（数据点个数），直接上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#定义</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_GetFrequency</span><span class="params">(xmin,xmax,datasize)</span>:</span></div><div class="line">	frequency=np.arange(<span class="number">0</span>,datasize/<span class="number">2.0</span>+<span class="number">1</span>,<span class="number">1.0</span>)/(xmax-xmin)</div><div class="line">	frequency2=np.arange(datasize/<span class="number">2.0</span>,<span class="number">1</span>,<span class="number">-1.0</span>)/(xmax-xmin)</div><div class="line">	frequencytotal=np.hstack((frequency,frequency2))</div><div class="line">	<span class="keyword">return</span> frequency,frequencytotal	</div><div class="line"><span class="comment">#调用</span></div><div class="line">f,ftotal=_GetFrequency(xmin,xmax,datasize)</div><div class="line"><span class="comment">#rfft函数的返回值是N/2+1个复数，分别表示从0(Hz)到sampling_rate/2(Hz)的N/2+1点频率的成分，与f大小一致</span></div><div class="line">F_topo=np.fft.rfft(topo)/datasize</div><div class="line"><span class="string">"""</span></div><div class="line">   最后我们计算每个频率分量的幅值，</div><div class="line">   并通过 20*np.log10() 将其转换为以db单位的值。</div><div class="line">   为了防止0幅值的成分造成log10无法计算，</div><div class="line">   我们调用np.clip对xf的幅值进行上下限处理：</div><div class="line">"""</div><div class="line">spectrum=<span class="number">20</span>*np.log10(np.clip(np.abs(F_topo), <span class="number">1e-20</span>, <span class="number">1e100</span>))</div></pre></td></tr></table></figure></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -148,9 +149,9 @@
  
 
 <div class="next">
-<a href="/2016/07/30/20160731/"  title="气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度">
+<a href="/2016/08/03/figure_python/"  title="Python精美作图">
  <strong>下一篇：</strong><br/> 
- <span>气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度
+ <span>Python精美作图
 </span>
 </a>
 </div>
@@ -183,7 +184,7 @@ var duoshuoQuery = {short_name:"cosscholar"};
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#自定义函数"><span class="toc-number">1.</span> <span class="toc-text">自定义函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#读取数据"><span class="toc-number">2.</span> <span class="toc-text">读取数据</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#自定义函数"><span class="toc-number">1.</span> <span class="toc-text">自定义函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#读取数据"><span class="toc-number">2.</span> <span class="toc-text">读取数据</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#求频谱"><span class="toc-number">3.</span> <span class="toc-text">求频谱</span></a></li></ol>
  
   </div>
 
@@ -201,7 +202,7 @@ var duoshuoQuery = {short_name:"cosscholar"};
 		  
 		
 		  
-			<li><a href="/categories/科研经验/" title="科研经验">科研经验<sup>3</sup></a></li>
+			<li><a href="/categories/科研经验/" title="科研经验">科研经验<sup>4</sup></a></li>
 		  
 		
 		</ul>
@@ -212,6 +213,14 @@ var duoshuoQuery = {short_name:"cosscholar"};
 <div class="tagslist">
 	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/Python/" title="Python">Python<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/优美作图/" title="优美作图">优美作图<sup>2</sup></a></li>
+			
 		
 			
 				<li><a href="/tags/地球物理/" title="地球物理">地球物理<sup>1</sup></a></li>
@@ -226,15 +235,7 @@ var duoshuoQuery = {short_name:"cosscholar"};
 			
 		
 			
-				<li><a href="/tags/Python/" title="Python">Python<sup>1</sup></a></li>
-			
-		
-			
 				<li><a href="/tags/数据分析/" title="数据分析">数据分析<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/优美作图/" title="优美作图">优美作图<sup>1</sup></a></li>
 			
 		
 			
