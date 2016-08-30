@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/08/30/20160731Brandon2016/</loc>
+    <lastmod>2016-08-30T06:17:46.690Z</lastmod>
+    <data>
+        <display>
+        <title>洋中脊段是由斜向地幔离散造成的</title>
+        <pubTime>2016-08-30T06:00:00.000Z</pubTime>
+        
+        <tag>地球动力学</tag>
+         
+        <tag>洋中脊</tag>
+         
+         
+           
+             
+              <breadCrumb title="学术前沿" url="http://yoursite.com/categories/%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/08/30/20160731EnceladusHotSpring/</loc>
     <lastmod>2016-08-30T05:46:29.417Z</lastmod>
     <data>
@@ -101,9 +123,9 @@
         
         <tag>Python</tag>
          
-        <tag>数据分析</tag>
-         
         <tag>优美作图</tag>
+         
+        <tag>数据分析</tag>
          
          
            
