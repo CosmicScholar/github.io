@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-30T02:27:23.633Z</updated>
+  <updated>2016-08-30T02:32:36.613Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,9 +16,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>土卫2上的热泉</title>
+    <link href="http://yoursite.com/2016/08/30/20160731EnceladusHotSpring/"/>
+    <id>http://yoursite.com/2016/08/30/20160731EnceladusHotSpring/</id>
+    <published>2016-08-30T01:29:00.000Z</published>
+    <updated>2016-08-30T02:32:36.613Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Enceladus’ hot springs</strong></p>
+<p>作者：<strong>Gabriel Tobie: is at the Laboratoire de Planétologie et Géodynamique, Université de Nantes</strong><br>期刊：<strong><a href="http://www.nature.com/nature/journal/v519/n7542/full/519162a.html" target="_blank" rel="external">Nature</a></strong></p>
+<hr>
+<p><strong>摘要</strong>：最近有研究表明，在洋中脊形成的海底地形（纹理）特征记录了由海平面变化引起的洋脊岩浆供应的快速（23 ky. ~ 100 ky.）波动，因为海平面变化会对洋底之下的地幔熔融产物有一定调节作用。我们利用断裂和岩浆侵位的定量模型证明了：实际上，海底形态的形成过程对于岩浆供应变化，周期小于100 ky. 的强阻尼波动起到了低通滤波作用。我们的研究结果表明，</p>
+<a id="more"></a>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;Enceladus’ hot springs&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;作者：&lt;strong&gt;Gabriel Tobie: is at the Laboratoire de Planétologie et Géodynamique, Université de Nantes&lt;/strong&gt;&lt;br&gt;期刊：&lt;strong&gt;&lt;a href=&quot;http://www.nature.com/nature/journal/v519/n7542/full/519162a.html&quot;&gt;Nature&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;摘要&lt;/strong&gt;：最近有研究表明，在洋中脊形成的海底地形（纹理）特征记录了由海平面变化引起的洋脊岩浆供应的快速（23 ky. ~ 100 ky.）波动，因为海平面变化会对洋底之下的地幔熔融产物有一定调节作用。我们利用断裂和岩浆侵位的定量模型证明了：实际上，海底形态的形成过程对于岩浆供应变化，周期小于100 ky. 的强阻尼波动起到了低通滤波作用。我们的研究结果表明，&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学术前沿" scheme="http://yoursite.com/categories/%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF/"/>
+    
+    
+      <category term="热液" scheme="http://yoursite.com/tags/%E7%83%AD%E6%B6%B2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>土卫2热泉</title>
-    <link href="http://yoursite.com/2016/08/30/20160731%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>http://yoursite.com/2016/08/30/20160731 - 副本/</id>
+    <link href="http://yoursite.com/2016/08/30/20160830/"/>
+    <id>http://yoursite.com/2016/08/30/20160830/</id>
     <published>2016-08-30T01:10:00.000Z</published>
     <updated>2016-08-30T02:27:23.633Z</updated>
     
@@ -135,7 +165,7 @@
     <link href="http://yoursite.com/2016/07/30/20160731/"/>
     <id>http://yoursite.com/2016/07/30/20160731/</id>
     <published>2016-07-30T14:10:00.000Z</published>
-    <updated>2016-08-30T02:13:13.066Z</updated>
+    <updated>2016-08-30T02:30:00.130Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Sensitivity of seafloor bathymetry to climate-driven fluctuations in mid-ocean ridge magma supply</strong></p>
 <p>作者：<strong>J.-A. Olive, et. al.</strong><br>期刊：<strong><a href="http://science.sciencemag.org/content/350/6258/310.short" target="_blank" rel="external">Science</a></strong></p>
