@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-30T07:14:04.584Z</updated>
+  <updated>2016-08-30T07:15:22.273Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/08/30/20160731Brandon2016/"/>
     <id>http://yoursite.com/2016/08/30/20160731Brandon2016/</id>
     <published>2016-08-30T06:00:00.000Z</published>
-    <updated>2016-08-30T07:14:04.584Z</updated>
+    <updated>2016-08-30T07:15:22.273Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Segmentation of mid-ocean ridges attributed to oblique mantle divergence</strong></p>
 <p>作者：<strong>Brandon P. VanderBeek, et al.</strong><br>期刊：<strong><a href="http://www.nature.com/ngeo/journal/v9/n8/full/ngeo2745.html" target="_blank" rel="external">Nature geoscience</a></strong></p>
@@ -28,7 +28,9 @@
 <p><strong>摘要</strong>：洋中脊脊段（segmentation）——构造和岩浆过程系统的沿轴变化——的起源一直存在争议。通常假设地幔流是板块离散的被动响应；转换断层之间的岩浆供应控制洋脊段。利用地震层析成像，我们构建了胡安德富卡脊（Juan de Fuca Ridge）的Endeavour脊段之下地幔流的几何结构和地幔熔融的分布。结合前人研究，我们的结果建立了地幔离散和板块扩张方向之间系统的倾斜角。在所有的三个实例研究中，<strong>地幔离散会由于板块扩张方向的变化而增加，并且流场随扩张速率的减小而增加</strong>。此外，地震成像也反映了大间距、非转换不连续是增强的地幔熔融保留的区域。我们提出：<strong>洋中脊之下的斜的地幔流是扩张脊段的重定向（reorientation）以及脊轴不连续之形成的驱动力</strong>。由此产生的构造不连续则是熔融向上运输的效率降低，因此形成了地幔过程在脊段尺度上的变化（segment-scale variation）。我们预测：<strong>横跨洋中脊的脊段受软流圈流演化模式和岩石圈断裂的动力学模式控制</strong>。<br><img src="http://ocp8aowoj.bkt.clouddn.com/brandon2016-Fig5-2.png" alt="快速和中速扩张脊的岩浆脊段模式"></p>
 <a id="more"></a>
 <hr>
+<blockquote>
 <p>自发现地球上洋中脊系统是被洋脊段（segments）分隔开，一些有意义的观测表明构造和岩浆过程存在系统的、沿轴变化。转换断层之间，脊段边界为长寿命的、非转换构造偏移或者二级脊岭不连续(见下图)，常出现于轴部最深处并随板块边界一起迁移。这些二级不连续包括快速和中速扩张脊上重叠的扩张中心（Overlapping spreading centres: OCSs）和慢速扩张洋脊上的斜向剪切带。非转换构造偏移与其相关的脊段尺度的岩浆过程仍是争论热点。</p>
+</blockquote>
 <p><img src="http://ocp8aowoj.bkt.clouddn.com/brandon2016-Fig1.png" alt="快速和中速扩张脊的构造脊段"></p>
 ]]></content>
     
