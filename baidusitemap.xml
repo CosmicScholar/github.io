@@ -4,16 +4,38 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/09/28/PythonandGMT/</loc>
+    <lastmod>2016-09-28T12:29:01.061Z</lastmod>
+    <data>
+        <display>
+        <title>强大的Python与GMT</title>
+        <pubTime>2016-09-28T11:51:00.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>GMT</tag>
+         
+         
+           
+             
+              <breadCrumb title="科研经验" url="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/08/30/20160731Brandon2016/</loc>
-    <lastmod>2016-08-30T08:03:58.513Z</lastmod>
+    <lastmod>2016-08-30T08:12:02.322Z</lastmod>
     <data>
         <display>
         <title>洋中脊段是由斜向地幔离散造成的</title>
         <pubTime>2016-08-30T06:00:00.000Z</pubTime>
         
-        <tag>地球动力学</tag>
-         
         <tag>洋中脊</tag>
+         
+        <tag>地球动力学</tag>
          
          
            
@@ -53,11 +75,11 @@
         <title>气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度</title>
         <pubTime>2016-07-30T14:10:00.000Z</pubTime>
         
-        <tag>地球物理</tag>
+        <tag>洋中脊</tag>
          
         <tag>地球动力学</tag>
          
-        <tag>洋中脊</tag>
+        <tag>地球物理</tag>
          
          
            

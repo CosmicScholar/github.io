@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-30T08:03:58.513Z</updated>
+  <updated>2016-09-28T12:29:01.061Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>强大的Python与GMT</title>
+    <link href="http://yoursite.com/2016/09/28/PythonandGMT/"/>
+    <id>http://yoursite.com/2016/09/28/PythonandGMT/</id>
+    <published>2016-09-28T11:51:00.000Z</published>
+    <updated>2016-09-28T12:29:01.061Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Python绘图与GMT对比</strong></p>
+<hr>
+<p>研究地球科学的学者没有不知道GMT的，相信大多数GMT使用者都是为了利用其地图投影，其实还有一些数据处理方面的功能，可能大家用的比较少。GMT在（数据）投影图方面表现确实很好，但是其脚本编写相对于编程语言欠灵活。这里介绍一种Python的库—Matplotlib-&gt;Basemap，其功能之强大较GMT有过之而无不及。介绍Python的好处在于其不仅能精美绘图，而且也可以做各种计算，毕竟是高级编程语言。只要学会用Python，在科研过程中的所有计算和绘图都能得到解决而且是优雅的解决。</p>
+<a id="more"></a>
+<h1 id="Basemap安装"><a href="#Basemap安装" class="headerlink" title="Basemap安装"></a>Basemap安装</h1><p>做科研用Python，推荐安装Python科学计算发行版<a href="https://www.continuum.io/downloads" target="_blank" rel="external">Anaconda</a>。安装好了Anaconda之后应该是自带有Basemap包的。</p>
+<h2 id="安装Anaconda"><a href="#安装Anaconda" class="headerlink" title="安装Anaconda"></a>安装Anaconda</h2><p>如果已经安装了Anaconda则略过此节。如果之前安装过Python，则最好是将之前安装的所有的python都卸载掉，注意对于python进行科学计算，安装Anaconda2.7就足够了，里面集成了python，可以直接在notepad++下运行，也可以在vs2015下编写和运行。</p>
+<h3 id="下载安装anaconda"><a href="#下载安装anaconda" class="headerlink" title="下载安装anaconda"></a>下载安装<a href="https://www.continuum.io/downloads" target="_blank" rel="external">anaconda</a></h3><p><img src="http://ocp8aowoj.bkt.clouddn.com/AnacondaSite.png" alt="Anaconda| center|800x0"> </p>
+<h2 id="查看包"><a href="#查看包" class="headerlink" title="查看包"></a>查看包</h2><p>打开AnacondaPrompt，在终端输入<code>pip list</code>，然后会有下面这样的显示<br><img src="http://ocp8aowoj.bkt.clouddn.com/AnacondaList.png" alt="AnacondaList| center|800x0"> </p>
+<h2 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h2><p>如果没有找到’basemap’，则输入命令:<code>pip install basemap</code>即可自动安装<strong>basemap包</strong><br>在地学绘图中难免绘制各种数据（比如地形、重力场、磁场或者其他的网格数据），GMT中使用的大多是nc（netCDF)格式。Basemap包也是一样的使用nc格式，但是需要安装<a href="https://pypi.python.org/pypi/netCDF4" target="_blank" rel="external">netCDF包</a>，自动安装即可：输入命令<code>pip install netCDF4</code>，等待安装完成。然后测试能否成功导入nc包：<code>from netCDF4 import Dataset as NetCDFFile</code>，如果出现错误，则需要用命令<code>pip install -U numpy</code>安装一次numpy，等待安装完成，再测试，应该就没问题了。</p>
+<h1 id="Python绘图与GMT对比"><a href="#Python绘图与GMT对比" class="headerlink" title="Python绘图与GMT对比"></a>Python绘图与GMT对比</h1><hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;Python绘图与GMT对比&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;研究地球科学的学者没有不知道GMT的，相信大多数GMT使用者都是为了利用其地图投影，其实还有一些数据处理方面的功能，可能大家用的比较少。GMT在（数据）投影图方面表现确实很好，但是其脚本编写相对于编程语言欠灵活。这里介绍一种Python的库—Matplotlib-&amp;gt;Basemap，其功能之强大较GMT有过之而无不及。介绍Python的好处在于其不仅能精美绘图，而且也可以做各种计算，毕竟是高级编程语言。只要学会用Python，在科研过程中的所有计算和绘图都能得到解决而且是优雅的解决。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="科研经验" scheme="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="GMT" scheme="http://yoursite.com/tags/GMT/"/>
+    
+  </entry>
+  
+  <entry>
     <title>洋中脊段是由斜向地幔离散造成的</title>
     <link href="http://yoursite.com/2016/08/30/20160731Brandon2016/"/>
     <id>http://yoursite.com/2016/08/30/20160731Brandon2016/</id>
     <published>2016-08-30T06:00:00.000Z</published>
-    <updated>2016-08-30T08:03:58.513Z</updated>
+    <updated>2016-08-30T08:12:02.322Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Segmentation of mid-ocean ridges attributed to oblique mantle divergence</strong></p>
 <p>作者：<strong>Brandon P. VanderBeek, et al.</strong><br>期刊：<strong><a href="http://www.nature.com/ngeo/journal/v9/n8/full/ngeo2745.html" target="_blank" rel="external">Nature geoscience</a></strong></p>
@@ -36,7 +72,8 @@
 <h2 id="实验几何和层析成像"><a href="#实验几何和层析成像" class="headerlink" title="实验几何和层析成像"></a>实验几何和层析成像</h2><blockquote>
 <p>图2表明了用于构建JdFR Endeavour脊段之下浅部地幔的层析成像模型的地震震源和接收的分布。我们使用Moho不连续面的反射波到时（Pn到时）对地幔之上4km、沿轴和过轴分别为100km和20km区域进行成像。构建了地壳速度和厚度的三维初始模型。</p>
 </blockquote>
-<h2 id="Endeavour的地幔流和熔融分布"><a href="#Endeavour的地幔流和熔融分布" class="headerlink" title="Endeavour的地幔流和熔融分布"></a>Endeavour的地幔流和熔融分布</h2>]]></content>
+<h2 id="Endeavour的地幔流和熔融分布"><a href="#Endeavour的地幔流和熔融分布" class="headerlink" title="Endeavour的地幔流和熔融分布"></a>Endeavour的地幔流和熔融分布</h2><p>我们的模型的各项异性分量约束了上地幔流在脊段尺度下的几何模型。因为地幔中地震的各项异性主要由橄榄石晶体的晶格优选方向决定。</p>
+<h2 id="洋中脊的构造洋脊段"><a href="#洋中脊的构造洋脊段" class="headerlink" title="洋中脊的构造洋脊段"></a>洋中脊的构造洋脊段</h2><h2 id="洋中脊的岩浆洋脊段"><a href="#洋中脊的岩浆洋脊段" class="headerlink" title="洋中脊的岩浆洋脊段"></a>洋中脊的岩浆洋脊段</h2>]]></content>
     
     <summary type="html">
     
@@ -50,9 +87,9 @@
       <category term="学术前沿" scheme="http://yoursite.com/categories/%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF/"/>
     
     
-      <category term="地球动力学" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
-    
       <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
+    
+      <category term="地球动力学" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
     
   </entry>
   
@@ -195,11 +232,11 @@
       <category term="学术前沿" scheme="http://yoursite.com/categories/%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF/"/>
     
     
-      <category term="地球物理" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/"/>
+      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
     
       <category term="地球动力学" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
     
-      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
+      <category term="地球物理" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/"/>
     
   </entry>
   
