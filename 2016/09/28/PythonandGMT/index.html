@@ -25,7 +25,7 @@
 <meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/kav7.png">
 <meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/Day-nightMap.png">
 <meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/Locations-2277Argo.png">
-<meta property="og:updated_time" content="2016-09-28T13:30:09.888Z">
+<meta property="og:updated_time" content="2016-09-28T13:31:03.636Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="强大的Python与GMT">
 <meta name="twitter:description" content="Python绘图与GMT对比
@@ -59,7 +59,7 @@
 				<h1 class="site-name"><a href="/" title="九天学者">九天学者</a></h1>
 				<h2 class="blog-motto">Knowledge is Power</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -79,7 +79,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
 						<input type="hidden" name="q" value="site:yoursite.com">
 					</form>
 					
@@ -122,14 +122,14 @@
 		<a href="/about" title="CoScholar" target="_blank" itemprop="author">CoScholar</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-28T11:51:00.000Z" itemprop="datePublished"> 發表於 2016-09-28</time>
+    <time datetime="2016-09-28T11:51:00.000Z" itemprop="datePublished"> Published 2016-09-28</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目錄</strong>
+			<strong class="toc-title">Contents</strong>
 		
 			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Basemap安装"><span class="toc-number">1.</span> <span class="toc-text">Basemap安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Anaconda"><span class="toc-number">1.1.</span> <span class="toc-text">安装Anaconda</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载安装anaconda"><span class="toc-number">1.1.1.</span> <span class="toc-text">下载安装anaconda</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看包"><span class="toc-number">1.2.</span> <span class="toc-text">查看包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装包"><span class="toc-number">1.3.</span> <span class="toc-text">安装包</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Python绘图与GMT对比"><span class="toc-number">2.</span> <span class="toc-text">Python绘图与GMT对比</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Python-Basemap绘图"><span class="toc-number">3.</span> <span class="toc-text">Python-Basemap绘图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#几种主要的投影"><span class="toc-number">3.1.</span> <span class="toc-text">几种主要的投影</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.2.</span> <span class="toc-text"></span></a></li></ol></li></ol>
 		
@@ -146,8 +146,8 @@
 <h2 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h2><p>如果没有找到’basemap’，则输入命令:<code>pip install basemap</code>即可自动安装<strong>basemap包</strong><br>在地学绘图中难免绘制各种数据（比如地形、重力场、磁场或者其他的网格数据），GMT中使用的大多是nc（netCDF)格式。Basemap包也是一样的使用nc格式，但是需要安装<a href="https://pypi.python.org/pypi/netCDF4" target="_blank" rel="external">netCDF包</a>，自动安装即可：输入命令<code>pip install netCDF4</code>，等待安装完成。然后测试能否成功导入nc包：<code>from netCDF4 import Dataset as NetCDFFile</code>，如果出现错误，则需要用命令<code>pip install -U numpy</code>安装一次numpy，等待安装完成，再测试，应该就没问题了。</p>
 <h1 id="Python绘图与GMT对比"><a href="#Python绘图与GMT对比" class="headerlink" title="Python绘图与GMT对比"></a>Python绘图与GMT对比</h1><h1 id="Python-Basemap绘图"><a href="#Python-Basemap绘图" class="headerlink" title="Python-Basemap绘图"></a>Python-Basemap绘图</h1><h2 id="几种主要的投影"><a href="#几种主要的投影" class="headerlink" title="几种主要的投影"></a>几种主要的投影</h2><p>常用的几种投影方式有：<a href="http://matplotlib.org/basemap/users/moll.html" target="_blank" rel="external">moll</a>, <a href="http://matplotlib.org/basemap/users/moll.html" target="_blank" rel="external">hammer</a>, <a href="http://matplotlib.org/basemap/users/robin.html" target="_blank" rel="external">robin</a>, <a href="http://matplotlib.org/basemap/users/eck4.html" target="_blank" rel="external">eck4</a>, <a href="http://matplotlib.org/basemap/users/kav7.html" target="_blank" rel="external">kav7</a>, <a href="http://matplotlib.org/basemap/users/mbtfpq.html" target="_blank" rel="external">mbtfpq</a>, <a href="http://matplotlib.org/basemap/users/cyl.html" target="_blank" rel="external">cyl</a>, <a href="http://matplotlib.org/basemap/users/merc.html" target="_blank" rel="external">merc</a>, <a href="http://matplotlib.org/basemap/users/lcc.html" target="_blank" rel="external">lcc</a>, <a href="http://matplotlib.org/basemap/users/laea.html" target="_blank" rel="external">laea</a>, <a href="http://matplotlib.org/basemap/users/plaea.html" target="_blank" rel="external">nalaea</a></p>
 <hr>
-<p><img src="http://ocp8aowoj.bkt.clouddn.com/eck4.png" alt="100x0"></p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://ocp8aowoj.bkt.clouddn.com/MollweideProjection.png" alt="100x0"></h2>  
+<p><img src="http://ocp8aowoj.bkt.clouddn.com/eck4.png" alt="10x0"></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://ocp8aowoj.bkt.clouddn.com/MollweideProjection.png" alt="10x0"></h2>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -214,22 +214,22 @@ var duoshuoQuery = {short_name:"cosscholar"};
 
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目錄</strong>
+  <strong class="toc-title">Contents</strong>
  
  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Basemap安装"><span class="toc-number">1.</span> <span class="toc-text">Basemap安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Anaconda"><span class="toc-number">1.1.</span> <span class="toc-text">安装Anaconda</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载安装anaconda"><span class="toc-number">1.1.1.</span> <span class="toc-text">下载安装anaconda</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看包"><span class="toc-number">1.2.</span> <span class="toc-text">查看包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装包"><span class="toc-number">1.3.</span> <span class="toc-text">安装包</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Python绘图与GMT对比"><span class="toc-number">2.</span> <span class="toc-text">Python绘图与GMT对比</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Python-Basemap绘图"><span class="toc-number">3.</span> <span class="toc-text">Python-Basemap绘图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#几种主要的投影"><span class="toc-number">3.1.</span> <span class="toc-text">几种主要的投影</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">3.2.</span> <span class="toc-text"></span></a></li></ol></li></ol>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
 <div class="categorieslist">
-	<p class="asidetitle">分類</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 		  
@@ -246,7 +246,7 @@ var duoshuoQuery = {short_name:"cosscholar"};
 
   
 <div class="tagslist">
-	<p class="asidetitle">標簽</p>
+	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
 			
@@ -254,7 +254,7 @@ var duoshuoQuery = {short_name:"cosscholar"};
 			
 		
 			
-				<li><a href="/tags/洋中脊/" title="洋中脊">洋中脊<sup>2</sup></a></li>
+				<li><a href="/tags/优美作图/" title="优美作图">优美作图<sup>2</sup></a></li>
 			
 		
 			
@@ -262,15 +262,11 @@ var duoshuoQuery = {short_name:"cosscholar"};
 			
 		
 			
-				<li><a href="/tags/优美作图/" title="优美作图">优美作图<sup>2</sup></a></li>
+				<li><a href="/tags/洋中脊/" title="洋中脊">洋中脊<sup>2</sup></a></li>
 			
 		
 			
 				<li><a href="/tags/数据分析/" title="数据分析">数据分析<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/热液/" title="热液">热液<sup>1</sup></a></li>
 			
 		
 			
@@ -279,6 +275,10 @@ var duoshuoQuery = {short_name:"cosscholar"};
 		
 			
 				<li><a href="/tags/GMT/" title="GMT">GMT<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/热液/" title="热液">热液<sup>1</sup></a></li>
 			
 		
 			
@@ -298,7 +298,7 @@ var duoshuoQuery = {short_name:"cosscholar"};
 
 
   <div class="linkslist">
-  <p class="asidetitle">友情鏈接</p>
+  <p class="asidetitle">Links</p>
     <ul>
         
           <li>
@@ -311,7 +311,7 @@ var duoshuoQuery = {short_name:"cosscholar"};
 </div>
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
 </div>
 
 </aside>
@@ -555,7 +555,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
