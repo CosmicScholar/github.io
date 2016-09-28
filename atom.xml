@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-28T13:33:24.515Z</updated>
+  <updated>2016-09-28T13:35:24.445Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/09/28/PythonandGMT/"/>
     <id>http://yoursite.com/2016/09/28/PythonandGMT/</id>
     <published>2016-09-28T11:51:00.000Z</published>
-    <updated>2016-09-28T13:33:24.515Z</updated>
+    <updated>2016-09-28T13:35:24.445Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Python绘图与GMT对比</strong></p>
 <hr>
@@ -33,7 +33,8 @@
 <h2 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h2><p>如果没有找到’basemap’，则输入命令:<code>pip install basemap</code>即可自动安装<strong>basemap包</strong><br>在地学绘图中难免绘制各种数据（比如地形、重力场、磁场或者其他的网格数据），GMT中使用的大多是nc（netCDF)格式。Basemap包也是一样的使用nc格式，但是需要安装<a href="https://pypi.python.org/pypi/netCDF4" target="_blank" rel="external">netCDF包</a>，自动安装即可：输入命令<code>pip install netCDF4</code>，等待安装完成。然后测试能否成功导入nc包：<code>from netCDF4 import Dataset as NetCDFFile</code>，如果出现错误，则需要用命令<code>pip install -U numpy</code>安装一次numpy，等待安装完成，再测试，应该就没问题了。</p>
 <h1 id="Python绘图与GMT对比"><a href="#Python绘图与GMT对比" class="headerlink" title="Python绘图与GMT对比"></a>Python绘图与GMT对比</h1><h1 id="Python-Basemap绘图"><a href="#Python-Basemap绘图" class="headerlink" title="Python-Basemap绘图"></a>Python-Basemap绘图</h1><h2 id="几种主要的投影"><a href="#几种主要的投影" class="headerlink" title="几种主要的投影"></a>几种主要的投影</h2><p>常用的几种投影方式有：<a href="http://matplotlib.org/basemap/users/moll.html" target="_blank" rel="external">moll</a>, <a href="http://matplotlib.org/basemap/users/moll.html" target="_blank" rel="external">hammer</a>, <a href="http://matplotlib.org/basemap/users/robin.html" target="_blank" rel="external">robin</a>, <a href="http://matplotlib.org/basemap/users/eck4.html" target="_blank" rel="external">eck4</a>, <a href="http://matplotlib.org/basemap/users/kav7.html" target="_blank" rel="external">kav7</a>, <a href="http://matplotlib.org/basemap/users/mbtfpq.html" target="_blank" rel="external">mbtfpq</a>, <a href="http://matplotlib.org/basemap/users/cyl.html" target="_blank" rel="external">cyl</a>, <a href="http://matplotlib.org/basemap/users/merc.html" target="_blank" rel="external">merc</a>, <a href="http://matplotlib.org/basemap/users/lcc.html" target="_blank" rel="external">lcc</a>, <a href="http://matplotlib.org/basemap/users/laea.html" target="_blank" rel="external">laea</a>, <a href="http://matplotlib.org/basemap/users/plaea.html" target="_blank" rel="external">nalaea</a></p>
 <hr>
-<h2 id=""><a href="#" class="headerlink" title=" "></a><img src="http://ocp8aowoj.bkt.clouddn.com/eck4.png" alt="10x0"> <img src="http://ocp8aowoj.bkt.clouddn.com/MollweideProjection.png" alt="10x0"></h2>]]></content>
+<p><img src="http://ocp8aowoj.bkt.clouddn.com/eck4.png" alt="投影| center|800x0"><br><img src="http://ocp8aowoj.bkt.clouddn.com/MollweideProjection.png" alt="投影| center|800x0"></p>
+]]></content>
     
     <summary type="html">
     
