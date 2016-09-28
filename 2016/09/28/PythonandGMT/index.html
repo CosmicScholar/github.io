@@ -21,17 +21,15 @@
 <meta property="og:description" content="Python绘图与GMT对比
 
 研究地球科学的学者没有不知道GMT的，相信大多数GMT使用者都是为了利用其地图投影，其实还有一些数据处理方面的功能，可能大家用的比较少。GMT在（数据）投影图方面表现确实很好，但是其脚本编写相对于编程语言欠灵活。这里介绍一种Python的库—Matplotlib-&amp;gt;Basemap，其功能之强大较GMT有过之而无不及。介绍Python的好处在于其不仅能精美绘图，">
-<meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/Day-nightMap.png">
-<meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/Locations-2277Argo.png">
-<meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/kav7.png">
 <meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/Etopo5.png">
-<meta property="og:updated_time" content="2016-09-28T12:57:08.072Z">
+<meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/kav7.png - http://ocp8aowoj.bkt.clouddn.com/Day-nightMap.png - http://ocp8aowoj.bkt.clouddn.com/Locations-2277Argo.png">
+<meta property="og:updated_time" content="2016-09-28T12:59:25.096Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="强大的Python与GMT">
 <meta name="twitter:description" content="Python绘图与GMT对比
 
 研究地球科学的学者没有不知道GMT的，相信大多数GMT使用者都是为了利用其地图投影，其实还有一些数据处理方面的功能，可能大家用的比较少。GMT在（数据）投影图方面表现确实很好，但是其脚本编写相对于编程语言欠灵活。这里介绍一种Python的库—Matplotlib-&amp;gt;Basemap，其功能之强大较GMT有过之而无不及。介绍Python的好处在于其不仅能精美绘图，">
-<meta name="twitter:image" content="http://ocp8aowoj.bkt.clouddn.com/Day-nightMap.png">
+<meta name="twitter:image" content="http://ocp8aowoj.bkt.clouddn.com/Etopo5.png">
 
     
     <link rel="alternative" href="/atom.xml" title="九天学者" type="application/atom+xml">
@@ -59,7 +57,7 @@
 				<h1 class="site-name"><a href="/" title="九天学者">九天学者</a></h1>
 				<h2 class="blog-motto">Knowledge is Power</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -79,7 +77,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
 						<input type="hidden" name="q" value="site:yoursite.com">
 					</form>
 					
@@ -95,13 +93,9 @@
   <div class="photoset">
     
       
-        <img src="http://ocp8aowoj.bkt.clouddn.com/Day-nightMap.png">
-      
-        <img src="http://ocp8aowoj.bkt.clouddn.com/Locations-2277Argo.png">
-      
-        <img src="http://ocp8aowoj.bkt.clouddn.com/kav7.png">
-      
         <img src="http://ocp8aowoj.bkt.clouddn.com/Etopo5.png">
+      
+        <img src="http://ocp8aowoj.bkt.clouddn.com/kav7.png - http://ocp8aowoj.bkt.clouddn.com/Day-nightMap.png - http://ocp8aowoj.bkt.clouddn.com/Locations-2277Argo.png">
       
     
   </div>
@@ -122,14 +116,14 @@
 		<a href="/about" title="CoScholar" target="_blank" itemprop="author">CoScholar</a>
 		
   <p class="article-time">
-    <time datetime="2016-09-28T11:51:00.000Z" itemprop="datePublished"> 发表于 2016-09-28</time>
+    <time datetime="2016-09-28T11:51:00.000Z" itemprop="datePublished"> Published 2016-09-28</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
+			<strong class="toc-title">Contents</strong>
 		
 			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Basemap安装"><span class="toc-number">1.</span> <span class="toc-text">Basemap安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Anaconda"><span class="toc-number">1.1.</span> <span class="toc-text">安装Anaconda</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载安装anaconda"><span class="toc-number">1.1.1.</span> <span class="toc-text">下载安装anaconda</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看包"><span class="toc-number">1.2.</span> <span class="toc-text">查看包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装包"><span class="toc-number">1.3.</span> <span class="toc-text">安装包</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Python绘图与GMT对比"><span class="toc-number">2.</span> <span class="toc-text">Python绘图与GMT对比</span></a></li></ol>
 		
@@ -212,22 +206,22 @@ var duoshuoQuery = {short_name:"cosscholar"};
 
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
+  <strong class="toc-title">Contents</strong>
  
  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Basemap安装"><span class="toc-number">1.</span> <span class="toc-text">Basemap安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Anaconda"><span class="toc-number">1.1.</span> <span class="toc-text">安装Anaconda</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#下载安装anaconda"><span class="toc-number">1.1.1.</span> <span class="toc-text">下载安装anaconda</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看包"><span class="toc-number">1.2.</span> <span class="toc-text">查看包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装包"><span class="toc-number">1.3.</span> <span class="toc-text">安装包</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Python绘图与GMT对比"><span class="toc-number">2.</span> <span class="toc-text">Python绘图与GMT对比</span></a></li></ol>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
 <div class="categorieslist">
-	<p class="asidetitle">分类</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 		  
@@ -244,7 +238,7 @@ var duoshuoQuery = {short_name:"cosscholar"};
 
   
 <div class="tagslist">
-	<p class="asidetitle">标签</p>
+	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
 			
@@ -252,7 +246,7 @@ var duoshuoQuery = {short_name:"cosscholar"};
 			
 		
 			
-				<li><a href="/tags/优美作图/" title="优美作图">优美作图<sup>2</sup></a></li>
+				<li><a href="/tags/洋中脊/" title="洋中脊">洋中脊<sup>2</sup></a></li>
 			
 		
 			
@@ -260,7 +254,11 @@ var duoshuoQuery = {short_name:"cosscholar"};
 			
 		
 			
-				<li><a href="/tags/洋中脊/" title="洋中脊">洋中脊<sup>2</sup></a></li>
+				<li><a href="/tags/优美作图/" title="优美作图">优美作图<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/数据分析/" title="数据分析">数据分析<sup>1</sup></a></li>
 			
 		
 			
@@ -276,14 +274,6 @@ var duoshuoQuery = {short_name:"cosscholar"};
 			
 		
 			
-				<li><a href="/tags/数据分析/" title="数据分析">数据分析<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/SublimeText/" title="SublimeText">SublimeText<sup>1</sup></a></li>
-			
-		
-			
 				<li><a href="/tags/马克飞象/" title="马克飞象">马克飞象<sup>1</sup></a></li>
 			
 		
@@ -291,12 +281,16 @@ var duoshuoQuery = {short_name:"cosscholar"};
 				<li><a href="/tags/Evernote/" title="Evernote">Evernote<sup>1</sup></a></li>
 			
 		
+			
+				<li><a href="/tags/SublimeText/" title="SublimeText">SublimeText<sup>1</sup></a></li>
+			
+		
 		</ul>
 </div>
 
 
   <div class="linkslist">
-  <p class="asidetitle">友情链接</p>
+  <p class="asidetitle">Links</p>
     <ul>
         
           <li>
@@ -309,7 +303,7 @@ var duoshuoQuery = {short_name:"cosscholar"};
 </div>
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
 </div>
 
 </aside>
@@ -553,7 +547,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
