@@ -25,7 +25,7 @@
 <meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/kav7.png">
 <meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/Day-nightMap.png">
 <meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/Locations-2277Argo.png">
-<meta property="og:updated_time" content="2016-09-28T13:10:53.698Z">
+<meta property="og:updated_time" content="2016-09-28T13:14:36.684Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="强大的Python与GMT">
 <meta name="twitter:description" content="Python绘图与GMT对比
@@ -144,7 +144,7 @@
 <h3 id="下载安装anaconda"><a href="#下载安装anaconda" class="headerlink" title="下载安装anaconda"></a>下载安装<a href="https://www.continuum.io/downloads" target="_blank" rel="external">anaconda</a></h3><p><img src="http://ocp8aowoj.bkt.clouddn.com/AnacondaSite.png" alt="Anaconda| center|800x0"> </p>
 <h2 id="查看包"><a href="#查看包" class="headerlink" title="查看包"></a>查看包</h2><p>打开AnacondaPrompt，在终端输入<code>pip list</code>，然后会有下面这样的显示<br><img src="http://ocp8aowoj.bkt.clouddn.com/AnacondaList.png" alt="AnacondaList| center|800x0"> </p>
 <h2 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h2><p>如果没有找到’basemap’，则输入命令:<code>pip install basemap</code>即可自动安装<strong>basemap包</strong><br>在地学绘图中难免绘制各种数据（比如地形、重力场、磁场或者其他的网格数据），GMT中使用的大多是nc（netCDF)格式。Basemap包也是一样的使用nc格式，但是需要安装<a href="https://pypi.python.org/pypi/netCDF4" target="_blank" rel="external">netCDF包</a>，自动安装即可：输入命令<code>pip install netCDF4</code>，等待安装完成。然后测试能否成功导入nc包：<code>from netCDF4 import Dataset as NetCDFFile</code>，如果出现错误，则需要用命令<code>pip install -U numpy</code>安装一次numpy，等待安装完成，再测试，应该就没问题了。</p>
-<h1 id="Python绘图与GMT对比"><a href="#Python绘图与GMT对比" class="headerlink" title="Python绘图与GMT对比"></a>Python绘图与GMT对比</h1><h1 id="Python-Basemap绘图"><a href="#Python-Basemap绘图" class="headerlink" title="Python-Basemap绘图"></a>Python-Basemap绘图</h1><h2 id="集中主要的投影"><a href="#集中主要的投影" class="headerlink" title="集中主要的投影"></a>集中主要的投影</h2><h3 id="Mollweide投影–moll"><a href="#Mollweide投影–moll" class="headerlink" title="Mollweide投影–moll"></a>Mollweide投影–moll</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> mpl_toolkits.basemap <span class="keyword">import</span> Basemap</div><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</div><div class="line"><span class="comment"># lon_0 is central longitude of projection.</span></div><div class="line"><span class="comment"># resolution = 'c' means use crude resolution coastlines.</span></div><div class="line">m = Basemap(projection=<span class="string">'moll'</span>,lon_0=<span class="number">0</span>,resolution=<span class="string">'c'</span>)</div><div class="line">m.drawcoastlines()</div><div class="line">m.fillcontinents(color=<span class="string">'coral'</span>,lake_color=<span class="string">'aqua'</span>)</div><div class="line"><span class="comment"># draw parallels and meridians.</span></div><div class="line">m.drawparallels(np.arange(<span class="number">-90.</span>,<span class="number">120.</span>,<span class="number">30.</span>))</div><div class="line">m.drawmeridians(np.arange(<span class="number">0.</span>,<span class="number">420.</span>,<span class="number">60.</span>))</div><div class="line">m.drawmapboundary(fill_color=<span class="string">'aqua'</span>)</div><div class="line">plt.title(<span class="string">"Mollweide Projection"</span>)</div><div class="line">plt.show()</div></pre></td></tr></table></figure>
+<h1 id="Python绘图与GMT对比"><a href="#Python绘图与GMT对比" class="headerlink" title="Python绘图与GMT对比"></a>Python绘图与GMT对比</h1><h1 id="Python-Basemap绘图"><a href="#Python-Basemap绘图" class="headerlink" title="Python-Basemap绘图"></a>Python-Basemap绘图</h1><h2 id="集中主要的投影"><a href="#集中主要的投影" class="headerlink" title="集中主要的投影"></a>集中主要的投影</h2><h3 id="Mollweide投影–moll"><a href="#Mollweide投影–moll" class="headerlink" title="Mollweide投影–moll"></a>Mollweide投影–moll</h3><p><a href="http://matplotlib.org/basemap/users/hammer.html" target="_blank" rel="external">code</a></p>
 <h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://ocp8aowoj.bkt.clouddn.com/MollweideProjection.png" alt="Moll投影| center|800x0"></h2>  
 	</div>
 		<footer class="article-footer clearfix">
@@ -252,10 +252,6 @@ var duoshuoQuery = {short_name:"cosscholar"};
 			
 		
 			
-				<li><a href="/tags/优美作图/" title="优美作图">优美作图<sup>2</sup></a></li>
-			
-		
-			
 				<li><a href="/tags/洋中脊/" title="洋中脊">洋中脊<sup>2</sup></a></li>
 			
 		
@@ -264,15 +260,7 @@ var duoshuoQuery = {short_name:"cosscholar"};
 			
 		
 			
-				<li><a href="/tags/GMT/" title="GMT">GMT<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/地球物理/" title="地球物理">地球物理<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/热液/" title="热液">热液<sup>1</sup></a></li>
+				<li><a href="/tags/优美作图/" title="优美作图">优美作图<sup>2</sup></a></li>
 			
 		
 			
@@ -280,7 +268,19 @@ var duoshuoQuery = {short_name:"cosscholar"};
 			
 		
 			
+				<li><a href="/tags/热液/" title="热液">热液<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/地球物理/" title="地球物理">地球物理<sup>1</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/SublimeText/" title="SublimeText">SublimeText<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/GMT/" title="GMT">GMT<sup>1</sup></a></li>
 			
 		
 			
