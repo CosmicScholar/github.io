@@ -89,9 +89,9 @@
       <category term="学术前沿" scheme="http://yoursite.com/categories/%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF/"/>
     
     
-      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
-    
       <category term="地球动力学" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
+    
+      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
     
   </entry>
   
@@ -234,11 +234,11 @@
       <category term="学术前沿" scheme="http://yoursite.com/categories/%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF/"/>
     
     
-      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
+      <category term="地球物理" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/"/>
     
       <category term="地球动力学" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
     
-      <category term="地球物理" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/"/>
+      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
     
   </entry>
   
