@@ -2202,6 +2202,10 @@ a {
   background: url("../img/segmentfault.png") center no-repeat #009a61;
   border: 1px solid #009a61;
 }
+#header .header-nav .social a.ResearchGate {
+  background: url("../img/RG.png") center no-repeat #13ad67;
+  border: 1px solid #13ad67;
+}
 #header .switch-part {
   width: 100%;
   position: absolute;
