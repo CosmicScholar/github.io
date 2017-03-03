@@ -16,7 +16,7 @@
 
 第一天安装sphinx安装sphinx非常简单，直接在终端输入命令:easy_install -U sphinx等待完成即">
 <meta property="og:image" content="http://matplotlib.org/_static/logo2.svg">
-<meta property="og:updated_time" content="2017-03-03T08:44:37.000Z">
+<meta property="og:updated_time" content="2017-03-03T10:51:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sphinx炼成记">
 <meta name="twitter:description" content="Latex虽然强大，但是不适合做在线文档。最吸引我的一个在线文档就是MatplotLib官方网站上的Gallery，将图像和代码结合在一起，查询和学习起来非常方便。一直以来就像折腾一下Sphinx，但是没下决心，从现在开始我将从0开始学习Sphinx的点点滴滴记录下来。
@@ -281,6 +281,7 @@
 <h2 id="创建自己的文本并编译"><a href="#创建自己的文本并编译" class="headerlink" title="创建自己的文本并编译"></a>创建自己的文本并编译</h2><p>创建一个source文件夹，如果有就省略此步骤。然后确定<code>conf.py</code>和<code>index.rst</code>两个文件在source目录下，然后需要修改makefile内容<code>SOURCEDIR     = source</code>（指定代码路径）。<br>现在可以创建自己的文档了，在source目录下创建一个<code>helloworld.rst</code>文件（当然文件名你可以随便命名），里面内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">The first file of cosscholar</div><div class="line">=================================</div><div class="line"></div><div class="line">my first sphinx text, perfect</div></pre></td></tr></table></figure></p>
 <p>然后修改<code>index.rst</code>，添加这个文档进来:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Welcome to Test of sphinx</div><div class="line">================================</div><div class="line"></div><div class="line">.. toctree::</div><div class="line">   :maxdepth: 1</div><div class="line">   </div><div class="line">   helloworld</div></pre></td></tr></table></figure></p>
 <p>最后在主目录下运行命令<code>make html</code>或者<code>make latexpdf</code>，前者是生成html，后者是pdf，可以在_build目录下查看。注意：目前这个步骤坐下来，是不支持中文文档的，如果要支持中文，请另外折腾。</p>
+<h2 id="部署到Read-the-Docs"><a href="#部署到Read-the-Docs" class="headerlink" title="部署到Read the Docs"></a>部署到<a href="https://readthedocs.org" target="_blank" rel="external">Read the Docs</a></h2><p>我最初的想法是将文档项目的代码托管到coding上（因为国内服务器快一些），然后把coding的项目链接到Read teh docs上。可是貌似只能与GitHub链接。<br>试了一把，部署的慢到哭，所以暂且不折腾这个，直接在本地自己查看就行，在浏览器中加入书签。一个项目整晚了在决定发布的问题吧。</p>
 
       
     </div>
@@ -292,7 +293,7 @@
         <p><span>本文标题:</span><a href="/2017/03/03/sphinx/">Sphinx炼成记</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 九天学者 的个人博客">九天学者</a></p>
         <p><span>发布时间:</span>2017年03月03日 - 20时29分</p>
-        <p><span>最后更新:</span>2017年03月03日 - 16时44分</p>
+        <p><span>最后更新:</span>2017年03月03日 - 18时51分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/03/03/sphinx/" title="Sphinx炼成记">http://yoursite.com/2017/03/03/sphinx/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/03/03/sphinx/　　作者: 九天学者" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -321,7 +322,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一天"><span class="toc-number">1.</span> <span class="toc-text">第一天</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装sphinx"><span class="toc-number">1.1.</span> <span class="toc-text">安装sphinx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建sphinx文档"><span class="toc-number">1.2.</span> <span class="toc-text">创建sphinx文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建自己的文本并编译"><span class="toc-number">1.3.</span> <span class="toc-text">创建自己的文本并编译</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一天"><span class="toc-number">1.</span> <span class="toc-text">第一天</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装sphinx"><span class="toc-number">1.1.</span> <span class="toc-text">安装sphinx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建sphinx文档"><span class="toc-number">1.2.</span> <span class="toc-text">创建sphinx文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建自己的文本并编译"><span class="toc-number">1.3.</span> <span class="toc-text">创建自己的文本并编译</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到Read-the-Docs"><span class="toc-number">1.4.</span> <span class="toc-text">部署到Read the Docs</span></a></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
