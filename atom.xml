@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-03T07:39:06.000Z</updated>
+  <updated>2017-03-03T07:48:44.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sphinx炼成记</title>
+    <link href="http://yoursite.com/2017/03/03/sphinx/"/>
+    <id>http://yoursite.com/2017/03/03/sphinx/</id>
+    <published>2017-03-03T12:29:46.000Z</published>
+    <updated>2017-03-03T07:48:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://matplotlib.org/_static/logo2.svg" alt="hydrothermal"></p>
+<blockquote>
+<p>Latex虽然强大，但是不适合做在线文档。最吸引我的一个在线文档就是<a href="http://matplotlib.org/gallery.html" target="_blank" rel="external">MatplotLib</a>官方网站上的<strong>Gallery</strong>，将图像和代码结合在一起，查询和学习起来非常方便。一直以来就像折腾一下Sphinx，但是没下决心，从现在开始我将从0开始学习Sphinx的点点滴滴记录下来。</p>
+</blockquote>
+<h2 id="第一天：安装Sphinx"><a href="#第一天：安装Sphinx" class="headerlink" title="第一天：安装Sphinx"></a>第一天：安装Sphinx</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://matplotlib.org/_static/logo2.svg&quot; alt=&quot;hydrothermal&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Latex虽然强大，但是不适合做在线文档。最吸引我的一个在线文档就是&lt;a href=&quot;htt
+    
+    </summary>
+    
+      <category term="科研经验" scheme="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+      <category term="Mac" scheme="http://yoursite.com/tags/Mac/"/>
+    
+      <category term="Sphinx" scheme="http://yoursite.com/tags/Sphinx/"/>
+    
+  </entry>
   
   <entry>
     <title>如何在Mac下轻松做科研</title>
@@ -158,9 +188,9 @@
       <category term="学术前沿" scheme="http://yoursite.com/categories/%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF/"/>
     
     
-      <category term="地球动力学" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
-    
       <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
+    
+      <category term="地球动力学" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
     
   </entry>
   
@@ -303,11 +333,11 @@
       <category term="学术前沿" scheme="http://yoursite.com/categories/%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF/"/>
     
     
-      <category term="地球物理" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/"/>
+      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
     
       <category term="地球动力学" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
     
-      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
+      <category term="地球物理" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/"/>
     
   </entry>
   
