@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-03T07:48:44.000Z</updated>
+  <updated>2017-03-03T08:44:37.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,13 +20,18 @@
     <link href="http://yoursite.com/2017/03/03/sphinx/"/>
     <id>http://yoursite.com/2017/03/03/sphinx/</id>
     <published>2017-03-03T12:29:46.000Z</published>
-    <updated>2017-03-03T07:48:44.000Z</updated>
+    <updated>2017-03-03T08:44:37.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://matplotlib.org/_static/logo2.svg" alt="hydrothermal"></p>
 <blockquote>
 <p>Latex虽然强大，但是不适合做在线文档。最吸引我的一个在线文档就是<a href="http://matplotlib.org/gallery.html" target="_blank" rel="external">MatplotLib</a>官方网站上的<strong>Gallery</strong>，将图像和代码结合在一起，查询和学习起来非常方便。一直以来就像折腾一下Sphinx，但是没下决心，从现在开始我将从0开始学习Sphinx的点点滴滴记录下来。</p>
 </blockquote>
-<h2 id="第一天：安装Sphinx"><a href="#第一天：安装Sphinx" class="headerlink" title="第一天：安装Sphinx"></a>第一天：安装Sphinx</h2>]]></content>
+<h1 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h1><h2 id="安装sphinx"><a href="#安装sphinx" class="headerlink" title="安装sphinx"></a>安装sphinx</h2><p>安装sphinx非常简单，直接在终端输入命令:<code>easy_install -U sphinx</code>等待完成即可。前提是你必须安装了python，我安装的是anaconda，python的版本是2.7. 完成之后应该会是如下的显示<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">Searching <span class="keyword">for</span> sphinx</div><div class="line">Reading https://pypi.python.org/simple/sphinx/</div><div class="line">Downloading https://pypi.python.org/packages/a7/df/4487783152b14f2b7<span class="built_in">cd</span>0b0c9afb119b262c584bf972b90ab544b61b74c62/Sphinx-1.5.3.tar.gz<span class="comment">#md5=6a9522761bde569a3d50cc4509e313d9</span></div><div class="line">Best match: Sphinx 1.5.3</div><div class="line">Processing Sphinx-1.5.3.tar.gz</div><div class="line">Writing /var/folders/lt/s5pnwvx97gg1yqqtdf363ljc0000gn/T/easy_install-rt2YYP/Sphinx-1.5.3/setup.cfg</div><div class="line">Running Sphinx-1.5.3/setup.py -q bdist_egg --dist-dir /var/folders/lt/s5pnwvx97gg1yqqtdf363ljc0000gn/T/easy_install-rt2YYP/Sphinx-1.5.3/egg-dist-tmp-_AW5_W</div><div class="line">warning: no files found matching <span class="string">'sphinx/locale/.tx/config'</span></div><div class="line">no previously-included directories found matching <span class="string">'doc/_build'</span></div><div class="line">no previously-included directories found matching <span class="string">'sphinx/locale/.tx'</span></div><div class="line">creating /Users/kakushi/anaconda/lib/python2.7/site-packages/Sphinx-1.5.3-py2.7.egg</div><div class="line">Extracting Sphinx-1.5.3-py2.7.egg to /Users/kakushi/anaconda/lib/python2.7/site-packages</div><div class="line">Adding Sphinx 1.5.3 to easy-install.pth file</div><div class="line">Installing sphinx-apidoc script to /Users/kakushi/anaconda/bin</div><div class="line">Installing sphinx-build script to /Users/kakushi/anaconda/bin</div><div class="line">Installing sphinx-quickstart script to /Users/kakushi/anaconda/bin</div><div class="line">Installing sphinx-autogen script to /Users/kakushi/anaconda/bin</div><div class="line"></div><div class="line">Installed /Users/kakushi/anaconda/lib/python2.7/site-packages/Sphinx-1.5.3-py2.7.egg</div><div class="line">Processing dependencies <span class="keyword">for</span> sphinx</div><div class="line">Finished processing dependencies <span class="keyword">for</span> sphinx</div></pre></td></tr></table></figure></p>
+<h2 id="创建sphinx文档"><a href="#创建sphinx文档" class="headerlink" title="创建sphinx文档"></a>创建sphinx文档</h2><p>新建一个目录，专门存放sphinx文档项目。我这里也配合了git同步到coding或者github上。于新建的这个目录下，在终端中输入命令:<code>sphinx-quickstart</code>，sphinx会自动处理文档系统所需的每一个步骤，你只需要关注项目名称和作者以及版本就行，其他的都可以一路下一步。<br>创建完毕之后会提示你：同时也创建了一个makefile，用于生成文档（关于makefile的使用请自行学习）。<br>生成pdf: <code>make latexpdf</code>，会在<code>./_build/latex</code>目录下生成一个以你项目名称命名的pdf文档。<br>上面这些步骤都是默认的，那么如何写自己的文档呢？</p>
+<h2 id="创建自己的文本并编译"><a href="#创建自己的文本并编译" class="headerlink" title="创建自己的文本并编译"></a>创建自己的文本并编译</h2><p>创建一个source文件夹，如果有就省略此步骤。然后确定<code>conf.py</code>和<code>index.rst</code>两个文件在source目录下，然后需要修改makefile内容<code>SOURCEDIR     = source</code>（指定代码路径）。<br>现在可以创建自己的文档了，在source目录下创建一个<code>helloworld.rst</code>文件（当然文件名你可以随便命名），里面内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">The first file of cosscholar</div><div class="line">=================================</div><div class="line"></div><div class="line">my first sphinx text, perfect</div></pre></td></tr></table></figure></p>
+<p>然后修改<code>index.rst</code>，添加这个文档进来:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Welcome to Test of sphinx</div><div class="line">================================</div><div class="line"></div><div class="line">.. toctree::</div><div class="line">   :maxdepth: 1</div><div class="line">   </div><div class="line">   helloworld</div></pre></td></tr></table></figure></p>
+<p>最后在主目录下运行命令<code>make html</code>或者<code>make latexpdf</code>，前者是生成html，后者是pdf，可以在_build目录下查看。注意：目前这个步骤坐下来，是不支持中文文档的，如果要支持中文，请另外折腾。</p>
+]]></content>
     
     <summary type="html">
     
@@ -188,9 +193,9 @@
       <category term="学术前沿" scheme="http://yoursite.com/categories/%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF/"/>
     
     
-      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
-    
       <category term="地球动力学" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
+    
+      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
     
   </entry>
   
@@ -223,40 +228,6 @@
     
     
       <category term="热液" scheme="http://yoursite.com/tags/%E7%83%AD%E6%B6%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python数据分析</title>
-    <link href="http://yoursite.com/2016/08/03/SCI_Python/"/>
-    <id>http://yoursite.com/2016/08/03/SCI_Python/</id>
-    <published>2016-08-03T01:29:00.000Z</published>
-    <updated>2016-08-03T04:22:31.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Matlab数据处理方便，但是作图实在是无力吐槽；C/C++，还有Fortran写大型的数据分析程序或高性计算还不错，但是可是化功能几乎没有。有了<strong>Python</strong>，两者兼备，既有丰富的数据处理函数库（比如numpy,scipy等，既有fft方面的也有小波方面的），也有精美的绘图函数库（如matplotlib），如果不进行大型的高性（并行）计算，强烈推荐科研过程中引入<strong>Python</strong>，如虎添翼。</p>
-<a id="more"></a>
-<p>从我个人的使用经历中一点一点积累经验，分享给大家，会实时更新，本文主要分享的是Python在数据处理（分析）中如何运用。</p>
-<h1 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h1><p>Python自定义函数很简单，只需要<code>def _funcname(par1,par2):</code>这种形式即可，注意这里的<code>:</code>，因为<strong>Python</strong>是一门非常讲究代码格式的语言，强制你写代码必须优雅，否则会出错，直接上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#定义</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_add</span><span class="params">(x,y)</span>:</span></div><div class="line">	z=x+y</div><div class="line">	<span class="keyword">return</span> z</div><div class="line"><span class="comment">#调用</span></div><div class="line">x=<span class="number">1</span></div><div class="line">y=<span class="number">2</span></div><div class="line">z=_add(x,y)</div></pre></td></tr></table></figure></p>
-<p>Python自定义函数返回值支持返回多个参数，包括列表，字典等，比如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#定义</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_func</span><span class="params">(x,y,z)</span>:</span></div><div class="line">	<span class="keyword">return</span> x,y,z</div><div class="line"><span class="comment">#调用</span></div><div class="line">x=<span class="number">1</span></div><div class="line">y=<span class="number">2</span></div><div class="line">z=<span class="number">3</span></div><div class="line">x0,y0,z0=_func(x,y,z)</div></pre></td></tr></table></figure></p>
-<h1 id="读取数据"><a href="#读取数据" class="headerlink" title="读取数据"></a>读取数据</h1><p>通常我们处理的数据分为二维数据和三维数据，二维数据也就是通常所说的剖面数据，一般存储形式为n列的文本文件，比如我要读取一条水深剖面数据，其存储格式为：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="number">0</span>	<span class="number">-2696.041808</span>	</div><div class="line"><span class="number">500</span>	<span class="number">-2698.925123</span>	</div><div class="line"><span class="number">1000</span>	<span class="number">-2702.703325</span>	</div><div class="line"><span class="number">1500</span>	<span class="number">-2707.372416</span>	</div><div class="line"><span class="number">2000</span>	<span class="number">-2712.638406</span>	</div><div class="line"><span class="number">2500</span>	<span class="number">-2719.304509</span>	</div><div class="line"><span class="number">3000</span>	<span class="number">-2726.121160</span>	</div><div class="line"><span class="number">3500</span>	<span class="number">-2734.344562</span>	</div><div class="line">......		......</div></pre></td></tr></table></figure></p>
-<p>第一列是距离，第二列是水深。读取文件我喜欢用<code>linecache</code>，这个包支持大文件读取，速度非常快，也不折腾别的了，反正现在计算机资源很多，不追求性能更优的话暂且就用这个吧。自定义一个读取文件返回数据数组的函数：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -*- coding: utf-8 -*-</span></div><div class="line"><span class="keyword">import</span> linecache</div><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"></div><div class="line"><span class="comment">#读取剖面数据</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_ReadData2d</span><span class="params">(filename,col_x,col_y)</span>:</span></div><div class="line">	AllData = linecache.getlines(filename)</div><div class="line">	x=np.linspace(<span class="number">0</span>,<span class="number">1.0</span>,len(AllData))</div><div class="line">	y=np.linspace(<span class="number">0</span>,<span class="number">1.0</span>,len(AllData))</div><div class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,len(AllData)):</div><div class="line">		LineData=AllData[i]</div><div class="line">		x[i]=(float(LineData.split()[col_x]))</div><div class="line">		y[i]=(float(LineData.split()[col_y]))</div><div class="line">	<span class="comment"># 清除缓存,关闭文件</span></div><div class="line">	linecache .clearcache()</div><div class="line"><span class="comment">#调用</span></div><div class="line">filename_topo=<span class="string">"profile1_etopo1_500.dat"</span></div><div class="line">x,y=_ReadData2d(filename_topo,<span class="number">0</span>,<span class="number">1</span>)</div><div class="line"><span class="keyword">print</span> x,y</div></pre></td></tr></table></figure></p>
-<h1 id="求频谱"><a href="#求频谱" class="headerlink" title="求频谱"></a>求频谱</h1><p>首先根据读取的数据计算频率范围，也就是$f$向量，只需要自变量$x$两个量即可：采样间隔；采样个数（数据点个数），直接上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#定义</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_GetFrequency</span><span class="params">(xmin,xmax,datasize)</span>:</span></div><div class="line">	frequency=np.arange(<span class="number">0</span>,datasize/<span class="number">2.0</span>+<span class="number">1</span>,<span class="number">1.0</span>)/(xmax-xmin)</div><div class="line">	frequency2=np.arange(datasize/<span class="number">2.0</span>,<span class="number">1</span>,<span class="number">-1.0</span>)/(xmax-xmin)</div><div class="line">	frequencytotal=np.hstack((frequency,frequency2))</div><div class="line">	<span class="keyword">return</span> frequency,frequencytotal	</div><div class="line"><span class="comment">#调用</span></div><div class="line">f,ftotal=_GetFrequency(xmin,xmax,datasize)</div><div class="line"><span class="comment">#rfft函数的返回值是N/2+1个复数，分别表示从0(Hz)到sampling_rate/2(Hz)的N/2+1点频率的成分，与f大小一致</span></div><div class="line">F_topo=np.fft.rfft(topo)/datasize</div><div class="line"><span class="string">"""</span></div><div class="line">   最后我们计算每个频率分量的幅值，</div><div class="line">   并通过 20*np.log10() 将其转换为以db单位的值。</div><div class="line">   为了防止0幅值的成分造成log10无法计算，</div><div class="line">   我们调用np.clip对xf的幅值进行上下限处理：</div><div class="line">"""</div><div class="line">spectrum=<span class="number">20</span>*np.log10(np.clip(np.abs(F_topo), <span class="number">1e-20</span>, <span class="number">1e100</span>))</div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Matlab数据处理方便，但是作图实在是无力吐槽；C/C++，还有Fortran写大型的数据分析程序或高性计算还不错，但是可是化功能几乎没有。有了&lt;strong&gt;Python&lt;/strong&gt;，两者兼备，既有丰富的数据处理函数库（比如numpy,scipy等，既有fft方面的也有小波方面的），也有精美的绘图函数库（如matplotlib），如果不进行大型的高性（并行）计算，强烈推荐科研过程中引入&lt;strong&gt;Python&lt;/strong&gt;，如虎添翼。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="科研经验" scheme="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
-    
-    
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
-    
-      <category term="数据分析" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
-    
-      <category term="优美作图" scheme="http://yoursite.com/tags/%E4%BC%98%E7%BE%8E%E4%BD%9C%E5%9B%BE/"/>
     
   </entry>
   
@@ -308,6 +279,40 @@
   </entry>
   
   <entry>
+    <title>Python数据分析</title>
+    <link href="http://yoursite.com/2016/08/03/SCI_Python/"/>
+    <id>http://yoursite.com/2016/08/03/SCI_Python/</id>
+    <published>2016-08-03T01:29:00.000Z</published>
+    <updated>2016-08-03T04:22:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Matlab数据处理方便，但是作图实在是无力吐槽；C/C++，还有Fortran写大型的数据分析程序或高性计算还不错，但是可是化功能几乎没有。有了<strong>Python</strong>，两者兼备，既有丰富的数据处理函数库（比如numpy,scipy等，既有fft方面的也有小波方面的），也有精美的绘图函数库（如matplotlib），如果不进行大型的高性（并行）计算，强烈推荐科研过程中引入<strong>Python</strong>，如虎添翼。</p>
+<a id="more"></a>
+<p>从我个人的使用经历中一点一点积累经验，分享给大家，会实时更新，本文主要分享的是Python在数据处理（分析）中如何运用。</p>
+<h1 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h1><p>Python自定义函数很简单，只需要<code>def _funcname(par1,par2):</code>这种形式即可，注意这里的<code>:</code>，因为<strong>Python</strong>是一门非常讲究代码格式的语言，强制你写代码必须优雅，否则会出错，直接上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#定义</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_add</span><span class="params">(x,y)</span>:</span></div><div class="line">	z=x+y</div><div class="line">	<span class="keyword">return</span> z</div><div class="line"><span class="comment">#调用</span></div><div class="line">x=<span class="number">1</span></div><div class="line">y=<span class="number">2</span></div><div class="line">z=_add(x,y)</div></pre></td></tr></table></figure></p>
+<p>Python自定义函数返回值支持返回多个参数，包括列表，字典等，比如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#定义</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_func</span><span class="params">(x,y,z)</span>:</span></div><div class="line">	<span class="keyword">return</span> x,y,z</div><div class="line"><span class="comment">#调用</span></div><div class="line">x=<span class="number">1</span></div><div class="line">y=<span class="number">2</span></div><div class="line">z=<span class="number">3</span></div><div class="line">x0,y0,z0=_func(x,y,z)</div></pre></td></tr></table></figure></p>
+<h1 id="读取数据"><a href="#读取数据" class="headerlink" title="读取数据"></a>读取数据</h1><p>通常我们处理的数据分为二维数据和三维数据，二维数据也就是通常所说的剖面数据，一般存储形式为n列的文本文件，比如我要读取一条水深剖面数据，其存储格式为：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="number">0</span>	<span class="number">-2696.041808</span>	</div><div class="line"><span class="number">500</span>	<span class="number">-2698.925123</span>	</div><div class="line"><span class="number">1000</span>	<span class="number">-2702.703325</span>	</div><div class="line"><span class="number">1500</span>	<span class="number">-2707.372416</span>	</div><div class="line"><span class="number">2000</span>	<span class="number">-2712.638406</span>	</div><div class="line"><span class="number">2500</span>	<span class="number">-2719.304509</span>	</div><div class="line"><span class="number">3000</span>	<span class="number">-2726.121160</span>	</div><div class="line"><span class="number">3500</span>	<span class="number">-2734.344562</span>	</div><div class="line">......		......</div></pre></td></tr></table></figure></p>
+<p>第一列是距离，第二列是水深。读取文件我喜欢用<code>linecache</code>，这个包支持大文件读取，速度非常快，也不折腾别的了，反正现在计算机资源很多，不追求性能更优的话暂且就用这个吧。自定义一个读取文件返回数据数组的函数：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -*- coding: utf-8 -*-</span></div><div class="line"><span class="keyword">import</span> linecache</div><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"></div><div class="line"><span class="comment">#读取剖面数据</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_ReadData2d</span><span class="params">(filename,col_x,col_y)</span>:</span></div><div class="line">	AllData = linecache.getlines(filename)</div><div class="line">	x=np.linspace(<span class="number">0</span>,<span class="number">1.0</span>,len(AllData))</div><div class="line">	y=np.linspace(<span class="number">0</span>,<span class="number">1.0</span>,len(AllData))</div><div class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,len(AllData)):</div><div class="line">		LineData=AllData[i]</div><div class="line">		x[i]=(float(LineData.split()[col_x]))</div><div class="line">		y[i]=(float(LineData.split()[col_y]))</div><div class="line">	<span class="comment"># 清除缓存,关闭文件</span></div><div class="line">	linecache .clearcache()</div><div class="line"><span class="comment">#调用</span></div><div class="line">filename_topo=<span class="string">"profile1_etopo1_500.dat"</span></div><div class="line">x,y=_ReadData2d(filename_topo,<span class="number">0</span>,<span class="number">1</span>)</div><div class="line"><span class="keyword">print</span> x,y</div></pre></td></tr></table></figure></p>
+<h1 id="求频谱"><a href="#求频谱" class="headerlink" title="求频谱"></a>求频谱</h1><p>首先根据读取的数据计算频率范围，也就是$f$向量，只需要自变量$x$两个量即可：采样间隔；采样个数（数据点个数），直接上代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#定义</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_GetFrequency</span><span class="params">(xmin,xmax,datasize)</span>:</span></div><div class="line">	frequency=np.arange(<span class="number">0</span>,datasize/<span class="number">2.0</span>+<span class="number">1</span>,<span class="number">1.0</span>)/(xmax-xmin)</div><div class="line">	frequency2=np.arange(datasize/<span class="number">2.0</span>,<span class="number">1</span>,<span class="number">-1.0</span>)/(xmax-xmin)</div><div class="line">	frequencytotal=np.hstack((frequency,frequency2))</div><div class="line">	<span class="keyword">return</span> frequency,frequencytotal	</div><div class="line"><span class="comment">#调用</span></div><div class="line">f,ftotal=_GetFrequency(xmin,xmax,datasize)</div><div class="line"><span class="comment">#rfft函数的返回值是N/2+1个复数，分别表示从0(Hz)到sampling_rate/2(Hz)的N/2+1点频率的成分，与f大小一致</span></div><div class="line">F_topo=np.fft.rfft(topo)/datasize</div><div class="line"><span class="string">"""</span></div><div class="line">   最后我们计算每个频率分量的幅值，</div><div class="line">   并通过 20*np.log10() 将其转换为以db单位的值。</div><div class="line">   为了防止0幅值的成分造成log10无法计算，</div><div class="line">   我们调用np.clip对xf的幅值进行上下限处理：</div><div class="line">"""</div><div class="line">spectrum=<span class="number">20</span>*np.log10(np.clip(np.abs(F_topo), <span class="number">1e-20</span>, <span class="number">1e100</span>))</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Matlab数据处理方便，但是作图实在是无力吐槽；C/C++，还有Fortran写大型的数据分析程序或高性计算还不错，但是可是化功能几乎没有。有了&lt;strong&gt;Python&lt;/strong&gt;，两者兼备，既有丰富的数据处理函数库（比如numpy,scipy等，既有fft方面的也有小波方面的），也有精美的绘图函数库（如matplotlib），如果不进行大型的高性（并行）计算，强烈推荐科研过程中引入&lt;strong&gt;Python&lt;/strong&gt;，如虎添翼。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="科研经验" scheme="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="优美作图" scheme="http://yoursite.com/tags/%E4%BC%98%E7%BE%8E%E4%BD%9C%E5%9B%BE/"/>
+    
+      <category term="数据分析" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
     <title>气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度</title>
     <link href="http://yoursite.com/2016/07/30/20160731/"/>
     <id>http://yoursite.com/2016/07/30/20160731/</id>
@@ -333,11 +338,11 @@
       <category term="学术前沿" scheme="http://yoursite.com/categories/%E5%AD%A6%E6%9C%AF%E5%89%8D%E6%B2%BF/"/>
     
     
-      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
+      <category term="地球物理" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/"/>
     
       <category term="地球动力学" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E5%8A%A8%E5%8A%9B%E5%AD%A6/"/>
     
-      <category term="地球物理" scheme="http://yoursite.com/tags/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/"/>
+      <category term="洋中脊" scheme="http://yoursite.com/tags/%E6%B4%8B%E4%B8%AD%E8%84%8A/"/>
     
   </entry>
   
