@@ -5,14 +5,17 @@
   
   <title>如何在Mac下轻松做科研 | 九天学者</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="工欲善其事，必先利其器。　　　　　　－－《论语》为什么要写这篇博文： 博主是一个地球物理学在读博士生，如果了解这个专业的读者都知道，在科研过程中会用到很多很多计算机的技能做计算、成图。当然了，慢慢的就会培养出对编程方面的兴趣，这回同时培养出一种说不出是好是坏的习惯：完(Qiang)美(Po)主(Zheng)义。所以这篇文章就是为那些有同样习惯的同学们一个参考，这也是本人在不断探索实践中总结出来">
+<meta property="og:type" content="article">
 <meta property="og:title" content="如何在Mac下轻松做科研">
 <meta property="og:url" content="http://yoursite.com/2017/03/03/mac_research/index.html">
 <meta property="og:site_name" content="九天学者">
+<meta property="og:description" content="工欲善其事，必先利其器。　　　　　　－－《论语》为什么要写这篇博文： 博主是一个地球物理学在读博士生，如果了解这个专业的读者都知道，在科研过程中会用到很多很多计算机的技能做计算、成图。当然了，慢慢的就会培养出对编程方面的兴趣，这回同时培养出一种说不出是好是坏的习惯：完(Qiang)美(Po)主(Zheng)义。所以这篇文章就是为那些有同样习惯的同学们一个参考，这也是本人在不断探索实践中总结出来">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488533058824&di=bb50ad63251a3e9ab7518ce443c119a0&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0330478554c70a700000158fcce4cb0.jpg">
-<meta property="og:updated_time" content="2017-03-03T06:36:43.000Z">
+<meta property="og:updated_time" content="2017-03-03T07:37:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在Mac下轻松做科研">
+<meta name="twitter:description" content="工欲善其事，必先利其器。　　　　　　－－《论语》为什么要写这篇博文： 博主是一个地球物理学在读博士生，如果了解这个专业的读者都知道，在科研过程中会用到很多很多计算机的技能做计算、成图。当然了，慢慢的就会培养出对编程方面的兴趣，这回同时培养出一种说不出是好是坏的习惯：完(Qiang)美(Po)主(Zheng)义。所以这篇文章就是为那些有同样习惯的同学们一个参考，这也是本人在不断探索实践中总结出来">
 <meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488533058824&di=bb50ad63251a3e9ab7518ce443c119a0&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0330478554c70a700000158fcce4cb0.jpg">
   
     <link rel="alternative" href="/atom.xml" title="九天学者" type="application/atom+xml">
@@ -264,6 +267,28 @@
       
           
         <p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1488533058824&amp;di=bb50ad63251a3e9ab7518ce443c119a0&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0330478554c70a700000158fcce4cb0.jpg" alt="hydrothermal"></p>
+<blockquote>
+<p><strong>工欲善其事，必先利其器。</strong><br>　　　　　　－－《论语》<br><strong>为什么要写这篇博文：</strong> 博主是一个地球物理学在读博士生，如果了解这个专业的读者都知道，在科研过程中会用到很多很多计算机的技能做计算、成图。当然了，慢慢的就会培养出对编程方面的兴趣，这回同时培养出一种说不出是好是坏的习惯：<strong>完</strong>(Qiang)<strong>美</strong>(Po)<strong>主</strong>(Zheng)<strong>义</strong>。所以这篇文章就是为那些有同样习惯的同学们一个参考，这也是本人在不断探索实践中总结出来的一些经验。</p>
+</blockquote>
+<h1 id="Mac下的科研工具汇总"><a href="#Mac下的科研工具汇总" class="headerlink" title="Mac下的科研工具汇总"></a>Mac下的科研工具汇总</h1><p>这里所说的科研工具指的是一些程序或者软件，能在你的科研路上为你助力的好助手。主要有一下几类</p>
+<h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><p>开发环境也就是通常说的编译/编程环境。我通常会用到的编程语言/脚本语言有: <code>C/C++</code>,<code>Python</code>,<code>Fortran</code>,<code>GMT</code>,<code>Matlab/Octave</code></p>
+<h3 id="计算类"><a href="#计算类" class="headerlink" title="计算类"></a>计算类</h3><ul>
+<li><p><strong><a href="https://registrationcenter.intel.com/en/products/" target="_blank" rel="external">Intel® Parallel Studio XE Composer Edition for C++ OS X</a></strong>: <code>C/C++</code>，<code>Fortran</code><br>当然，Mac自带的gfortran和gcc, g++这些都可以满足基本编程需要，但是我需要用到MKL等一些计算库，所以安装了Intel的开发套件，学生可以凭借edu邮箱免费申请education版本。 </p>
+</li>
+<li><p><strong><a href="https://www.continuum.io/downloads/" target="_blank" rel="external">Anaconda</a></strong>: <code>Python</code>,<a href="http://www.fatiando.org/docs.html" target="_blank" rel="external"><code>Fatiano</code></a>,<code>Jupyter-notebook</code><br>我最喜欢的一个工具就是<code>Jupyter-notebook</code>，这是一个非常强大的工具，不仅可以做笔记，也可以将程序代码放在cell里面直接运行，紧接着就可以出图。最后还可以导出pdf文档。结合版本控制，就可以全程记录你的整个研究的细节过程，从此可以向不可重复研究说拜拜了。<br>这个notebook是要以python为核心驱动的，而安装python可以有一个简单方式，那就是anaconda。conda是专门为科学计算整合的一个python发行版本，里面基本上包含了你能够用到的一些库，如果需要安装特定的库，可以直接用<code>pip install</code>命令很容易的安装。<br>最后一个使用<code>Python</code>的理由可能就是<code>Fatiando</code>这个地球物理软件包了，这是一位巴西的地球物理学者开发的，而且一直在更新中。里面有很多重、磁、震方面的程序，如正演、延拓、欧拉反褶积什么的。</p>
+</li>
+</ul>
+<h3 id="写作类"><a href="#写作类" class="headerlink" title="写作类"></a>写作类</h3><ul>
+<li><p><strong><a href="http://tug.org/mactex/" target="_blank" rel="external">MacTex</a></strong><br>Mac系统下虽然有了word版本，但也不是很好用。首先当文件大了之后会很容易奔溃；第二没法进行版本控制；第三参考文献、公式编号、交叉引用等等都不是很好用。而且你还可能会化很多时间去调整其排版。相信刚入门MAC的同学也不会倾向于Pages，所以这些烦恼都可以通过一个名叫Latex的神器来解决。<br>现在所有的英文期刊都是支持Latex投稿的（国内有部分也支持了），这也是我选择Latex的原因。每个期刊都有自己的Latex模板，你只需要专注于你的写作，不用操心排版等所有码字之外的事情。<br>关于参考文献，我会在下面推荐使用<code>Mendeley</code>，结合Latex使用简直就是神搭档。</p>
+</li>
+<li><p><strong>印象笔记</strong>+<strong>马克飞象</strong><br>印象笔记大家肯定都很熟悉了，但是把他和马克飞象结合起来用会更有意思，但是马克飞象是收费的，反正我是买了一年的vip，只因上面提到的那个习惯。</p>
+</li>
+<li><p><strong>Hexo</strong>+<strong>Coding</strong><br>这个属于高级篇了，这是写个人博客的工具。有兴趣的可以自己折腾或者找我，我记录了这个安装和使用过程，但是是卸载印象笔记里面的，懒得放到博客上了，有需要的可以找我<a href="1013282124@qq.com">分享</a>给你。</p>
+</li>
+</ul>
+<blockquote>
+<p>写不下去了，放的时间太久了，积累了很多，一下写不完，以后慢慢完善吧。</p>
+</blockquote>
 
       
     </div>
@@ -275,7 +300,7 @@
         <p><span>本文标题:</span><a href="/2017/03/03/mac_research/">如何在Mac下轻松做科研</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 九天学者 的个人博客">九天学者</a></p>
         <p><span>发布时间:</span>2017年03月03日 - 19时29分</p>
-        <p><span>最后更新:</span>2017年03月03日 - 14时36分</p>
+        <p><span>最后更新:</span>2017年03月03日 - 15时37分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/03/03/mac_research/" title="如何在Mac下轻松做科研">http://yoursite.com/2017/03/03/mac_research/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/03/03/mac_research/　　作者: 九天学者" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -304,7 +329,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Mac下的科研工具汇总"><span class="toc-number">1.</span> <span class="toc-text">Mac下的科研工具汇总</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#开发环境"><span class="toc-number">1.1.</span> <span class="toc-text">开发环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#计算类"><span class="toc-number">1.1.1.</span> <span class="toc-text">计算类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#写作类"><span class="toc-number">1.1.2.</span> <span class="toc-text">写作类</span></a></li></ol></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -384,7 +409,7 @@
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/mac_research/">如何在Mac下轻松做科研</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/04/20170104/">热液流体循环演化的数值模拟</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/28/PythonandGMT/">强大的Python与GMT</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731Brandon2016/">洋中脊段是由斜向地幔离散造成的</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731EnceladusHotSpring/">土卫2上的热泉</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/figure_python/">Python精美作图</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/SCI_Python/">Python数据分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/30/20160731/">气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/new-blog/">Sublime Text 3使用技巧之（二：常用插件）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/secondTest/">如何优雅的整理笔记</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/mac_research/">如何在Mac下轻松做科研</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/04/20170104/">热液流体循环演化的数值模拟</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/28/PythonandGMT/">强大的Python与GMT</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731Brandon2016/">洋中脊段是由斜向地幔离散造成的</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731EnceladusHotSpring/">土卫2上的热泉</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/SCI_Python/">Python数据分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/figure_python/">Python精美作图</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/30/20160731/">气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/new-blog/">Sublime Text 3使用技巧之（二：常用插件）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/secondTest/">如何优雅的整理笔记</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
