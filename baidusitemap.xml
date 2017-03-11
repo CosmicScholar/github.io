@@ -3,11 +3,53 @@
 
 
     
+  <url>
+    <loc>http://yoursite.com/2017/03/11/visiting-vt-prep/</loc>
+    <lastmod>2017-03-11T06:27:28.000Z</lastmod>
+    <data>
+        <display>
+        <title>九天学者-VT访学记之一：前期准备</title>
+        <pubTime>2017-03-11T05:02:56.000Z</pubTime>
+        
+        <tag>美国</tag>
+         
+        <tag>旅行</tag>
+         
+         
+           
+             
+              <breadCrumb title="留学" url="http://yoursite.com/categories/%E7%95%99%E5%AD%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
+  <url>
+    <loc>http://yoursite.com/2017/03/03/mac_research/</loc>
+    <lastmod>2017-03-11T05:14:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何在Mac下轻松做科研</title>
+        <pubTime>2017-03-03T11:29:46.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>Mac</tag>
+         
+         
+           
+             
+              <breadCrumb title="科研经验" url="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://yoursite.com/2017/03/03/sphinx/</loc>
-    <lastmod>2017-03-11T04:49:41.000Z</lastmod>
+    <lastmod>2017-03-11T05:13:46.000Z</lastmod>
     <data>
         <display>
         <title>Sphinx炼成记</title>
@@ -26,6 +68,30 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>http://yoursite.com/2016/08/03/figure_python/</loc>
+    <lastmod>2017-03-11T05:05:13.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python精美作图</title>
+        <pubTime>2016-08-03T01:29:00.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>优美作图</tag>
+         
+         
+           
+             
+              <breadCrumb title="科研经验" url="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
     
   <url>
     <loc>http://yoursite.com/2016/07/29/secondTest/</loc>
@@ -59,9 +125,9 @@
         
         <tag>Python</tag>
          
-        <tag>优美作图</tag>
-         
         <tag>数据分析</tag>
+         
+        <tag>优美作图</tag>
          
          
            
@@ -82,50 +148,6 @@
         <pubTime>2016-07-29T13:06:00.000Z</pubTime>
         
         <tag>SublimeText</tag>
-         
-         
-           
-             
-              <breadCrumb title="科研经验" url="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/03/03/mac_research/</loc>
-    <lastmod>2017-03-11T04:48:31.000Z</lastmod>
-    <data>
-        <display>
-        <title>如何在Mac下轻松做科研</title>
-        <pubTime>2017-03-03T11:29:46.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Mac</tag>
-         
-         
-           
-             
-              <breadCrumb title="科研经验" url="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/08/03/figure_python/</loc>
-    <lastmod>2017-03-11T04:48:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>Python精美作图</title>
-        <pubTime>2016-08-03T01:29:00.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>优美作图</tag>
          
          
            

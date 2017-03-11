@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/03/11/visiting-vt-prep/</loc>
+    
+    <lastmod>2017-03-11T06:27:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/03/03/mac_research/</loc>
+    
+    <lastmod>2017-03-11T05:14:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/03/03/sphinx/</loc>
+    
+    <lastmod>2017-03-11T05:13:46.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/08/03/figure_python/</loc>
+    
+    <lastmod>2017-03-11T05:05:13.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/tags/index.html</loc>
     
     <lastmod>2017-03-11T05:01:18.000Z</lastmod>
@@ -12,13 +40,6 @@
     <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2017-03-11T04:53:39.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/03/03/sphinx/</loc>
-    
-    <lastmod>2017-03-11T04:49:41.000Z</lastmod>
     
   </url>
   
@@ -40,20 +61,6 @@
     <loc>http://yoursite.com/2016/07/29/new-blog/</loc>
     
     <lastmod>2017-03-11T04:49:14.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/03/03/mac_research/</loc>
-    
-    <lastmod>2017-03-11T04:48:31.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/08/03/figure_python/</loc>
-    
-    <lastmod>2017-03-11T04:48:26.000Z</lastmod>
     
   </url>
   
