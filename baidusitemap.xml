@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/03/03/sphinx/</loc>
+    <lastmod>2017-03-17T07:45:58.000Z</lastmod>
+    <data>
+        <display>
+        <title>Sphinx炼成记</title>
+        <pubTime>2017-03-03T12:29:46.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+        <tag>Sphinx</tag>
+         
+         
+           
+             
+              <breadCrumb title="科研经验" url="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/03/03/mac_research/</loc>
     <lastmod>2017-03-17T07:41:26.000Z</lastmod>
     <data>
@@ -11,9 +33,9 @@
         <title>如何在Mac下轻松做科研</title>
         <pubTime>2017-03-03T11:29:46.000Z</pubTime>
         
-        <tag>Mac</tag>
-         
         <tag>Python</tag>
+         
+        <tag>Mac</tag>
          
          
            
@@ -41,28 +63,6 @@
            
              
               <breadCrumb title="留学" url="http://yoursite.com/categories/%E7%95%99%E5%AD%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/03/03/sphinx/</loc>
-    <lastmod>2017-03-11T05:13:46.000Z</lastmod>
-    <data>
-        <display>
-        <title>Sphinx炼成记</title>
-        <pubTime>2017-03-03T12:29:46.000Z</pubTime>
-        
-        <tag>Mac</tag>
-         
-        <tag>Sphinx</tag>
-         
-         
-           
-             
-              <breadCrumb title="科研经验" url="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
           
         </display>
     </data>
