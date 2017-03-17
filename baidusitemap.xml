@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/03/03/mac_research/</loc>
+    <lastmod>2017-03-17T07:41:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>如何在Mac下轻松做科研</title>
+        <pubTime>2017-03-03T11:29:46.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="科研经验" url="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/03/11/visiting-vt-prep/</loc>
     <lastmod>2017-03-11T06:49:03.000Z</lastmod>
     <data>
@@ -19,28 +41,6 @@
            
              
               <breadCrumb title="留学" url="http://yoursite.com/categories/%E7%95%99%E5%AD%A6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/03/03/mac_research/</loc>
-    <lastmod>2017-03-11T05:14:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>如何在Mac下轻松做科研</title>
-        <pubTime>2017-03-03T11:29:46.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Mac</tag>
-         
-         
-           
-             
-              <breadCrumb title="科研经验" url="http://yoursite.com/categories/%E7%A7%91%E7%A0%94%E7%BB%8F%E9%AA%8C/"/>
           
         </display>
     </data>
@@ -125,9 +125,9 @@
         
         <tag>Python</tag>
          
-        <tag>数据分析</tag>
-         
         <tag>优美作图</tag>
+         
+        <tag>数据分析</tag>
          
          
            

@@ -10,7 +10,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/03/03/mac_research/index.html">
 <meta property="og:site_name" content="九天学者">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488533058824&di=bb50ad63251a3e9ab7518ce443c119a0&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0330478554c70a700000158fcce4cb0.jpg">
-<meta property="og:updated_time" content="2017-03-11T05:14:08.000Z">
+<meta property="og:updated_time" content="2017-03-17T07:41:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在Mac下轻松做科研">
 <meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488533058824&di=bb50ad63251a3e9ab7518ce443c119a0&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0330478554c70a700000158fcce4cb0.jpg">
@@ -283,6 +283,18 @@
 </li>
 <li><p><strong>Hexo</strong>+<strong>Coding</strong><br>这个属于高级篇了，这是写个人博客的工具。有兴趣的可以自己折腾或者找我，我记录了这个安装和使用过程，但是是卸载印象笔记里面的，懒得放到博客上了，有需要的可以找我<a href="1013282124@qq.com">分享</a>给你。</p>
 </li>
+<li><p><strong>Sphinx</strong><br>这个工具主要用于写读书（期刊、专著等文献）笔记，以及将一些绘图代码直接放到Gallery里面方便查找和再利用。其实Sphinx还可以做很多东西，比如Python程序库的说明文档、写文章+照片=记录生活等等，其他功能自己发现。<br>而且这个还可以放到网上可以作为自己的个人主页（跟个人博客是不同类型，偏重点不同）：在coding里面创建一个开放的项目，然后上传sphinx的_build内容，最后启动项目的展示功能即可。<br><strong>restructuredtext预览及编辑</strong>工具：尝试过VSCode得关于rst的插件，结果发现很不稳定，经常打不开；也尝试过sphinx-GUI，也不好用：第一是不能实时预览必须点击build才能看到结果；第二是预览和写作不能同步滚动，最终放弃。目前看到最好用的还是Atom配合其插件<code>rst-preview-pandoc</code>，安装方法与VSCode插件安装类似。</p>
+</li>
+</ul>
+<h3 id="编程工具"><a href="#编程工具" class="headerlink" title="编程工具"></a>编程工具</h3><ul>
+<li><strong>VScode</strong><br>这个是我用的最习惯的一个功能强大+颜值高的编辑器。支持各种语言的语法高亮，而且与Bash终端集成，也可以有插件支持直接运行python，bash等程序。估计Atom也是很强大的，不过先入为主啦，我还是习惯首先选择vscode。<br>我个人觉得效率最高的编程姿势还是在文本编辑器下编辑代码，然后写一个makefile来编译。本人在使用MAC之前也是VSstudio的忠实用户啊，不过MAC系统逼着自己用这种makefile的方式编程，熬过了前两天的懵逼状态，后面就会发现这种方式确实是最高效的，然后配合<strong>git</strong>进行版本管理，简直是无敌了。</li>
+<li><p><strong>git</strong><br>关于git的简单用法，我只想列举一下几个命令:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">git remote add origin http://xxxxxx</div><div class="line">git add --all</div><div class="line">git status</div><div class="line">git commit -m<span class="string">"message"</span></div><div class="line">git push</div><div class="line">git brunch</div><div class="line">git brunch &lt;new brunch&gt;</div><div class="line">git checkout &lt;brunch2&gt;</div><div class="line">git merge &lt;brunch1&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Atom</strong><br>一个比VScode诞生更早的一个非常强大的编辑器，这里不过多介绍，我目前只是用其边际rst，因为vscode的rst预览插件实在是不好用。</p>
+</li>
+<li><strong>Doxygen</strong><br>用于生成程序的以来关系以及说明文档，但前提是你的程序代码必须按照Doxygen的注释规范进行注释。我主要用它进行C/C++程序和Fortran程序的文档生成。安装很简单直接用<code>brew install doxygen</code>安装即可</li>
+<li><strong>Graphviz</strong><br>这是配合Doxygen使用的，主要用于生成函数或者类之间的依赖关系图的，这个过程都是自动的，只需要在配置文件里面打开<code>CALL_GRAPH</code>以及<code>CALLER_GRAPH</code>，和使用<code>DOT</code>等。<br>这个工具也可以单独使用，其官网上有MAC系统下的GUI版本。单独使用比如做流程图，其他的一些结构图之类的，程序代码的依赖关系图只是这个工具功能的冰山一角，更多的强大功能还需自己根据需要慢慢挖掘。</li>
 </ul>
 <blockquote>
 <p>写不下去了，放的时间太久了，积累了很多，一下写不完，以后慢慢完善吧。</p>
@@ -298,7 +310,7 @@
         <p><span>本文标题:</span><a href="/2017/03/03/mac_research/">如何在Mac下轻松做科研</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 九天学者 的个人博客">九天学者</a></p>
         <p><span>发布时间:</span>2017年03月03日 - 19时29分</p>
-        <p><span>最后更新:</span>2017年03月11日 - 13时14分</p>
+        <p><span>最后更新:</span>2017年03月17日 - 15时41分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/03/03/mac_research/" title="如何在Mac下轻松做科研">http://yoursite.com/2017/03/03/mac_research/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/03/03/mac_research/　　作者: 九天学者" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -336,7 +348,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Mac下的科研工具汇总"><span class="toc-number">1.</span> <span class="toc-text">Mac下的科研工具汇总</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#开发环境"><span class="toc-number">1.1.</span> <span class="toc-text">开发环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#计算类"><span class="toc-number">1.1.1.</span> <span class="toc-text">计算类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#写作类"><span class="toc-number">1.1.2.</span> <span class="toc-text">写作类</span></a></li></ol></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Mac下的科研工具汇总"><span class="toc-number">1.</span> <span class="toc-text">Mac下的科研工具汇总</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#开发环境"><span class="toc-number">1.1.</span> <span class="toc-text">开发环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#计算类"><span class="toc-number">1.1.1.</span> <span class="toc-text">计算类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#写作类"><span class="toc-number">1.1.2.</span> <span class="toc-text">写作类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编程工具"><span class="toc-number">1.1.3.</span> <span class="toc-text">编程工具</span></a></li></ol></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -418,7 +430,7 @@
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/visiting-vt-prep/">九天学者-VT访学记之一：前期准备</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/sphinx/">Sphinx炼成记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/mac_research/">如何在Mac下轻松做科研</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/04/20170104/">热液流体循环演化的数值模拟</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/28/PythonandGMT/">强大的Python与GMT</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731Brandon2016/">洋中脊段是由斜向地幔离散造成的</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731EnceladusHotSpring/">土卫2上的热泉</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/SCI_Python/">Python数据分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/figure_python/">Python精美作图</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/30/20160731/">气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/secondTest/">如何优雅的整理笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/new-blog/">Sublime Text 3使用技巧之（二：常用插件）</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/visiting-vt-prep/">九天学者-VT访学记之一：前期准备</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/sphinx/">Sphinx炼成记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/mac_research/">如何在Mac下轻松做科研</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/04/20170104/">热液流体循环演化的数值模拟</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/28/PythonandGMT/">强大的Python与GMT</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731Brandon2016/">洋中脊段是由斜向地幔离散造成的</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731EnceladusHotSpring/">土卫2上的热泉</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/SCI_Python/">Python数据分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/figure_python/">Python精美作图</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/30/20160731/">气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/new-blog/">Sublime Text 3使用技巧之（二：常用插件）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/secondTest/">如何优雅的整理笔记</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
