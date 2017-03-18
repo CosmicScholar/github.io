@@ -3,35 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>九天学者-VT访学记之一：前期准备 | 九天学者</title>
+  <title>注释代码的正确姿势之一：Fortran | 九天学者</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="只要做好知识和技能的储备，随时都有机会有梦想倾向你。
-
-
-访问国家：美国
-目标高校：弗吉尼亚理工大学(Virginia Tec)，全称是Virginia Polytechnic Institute and State University　　　　　全美实力最强的四大理工学院（麻省理工，加州理工，佐治亚理工学院）
-所在城市：弗吉尼亚州-黑堡(Blacksburg)">
+  <meta name="description" content="相信用过VTK的同学一定对其说明文档很熟悉，并获益不少。他的说明文档是如此的强大，是怎么制作的呢？这将是本文的重点。  
+可能有人会问，做这个文档有啥用？那么我告诉你，有如此问题说明你对计算机程序接触的还很初步，不适合看本文。至少在你没有写过大型程序，或者根本就没用过开源的大型程序。  
+因为对于一个类似于VTK这样的大型函数库，其C++类就有几百个，每个类的功能是什么？如何调用？它有哪些成员变">
 <meta property="og:type" content="article">
-<meta property="og:title" content="九天学者-VT访学记之一：前期准备">
-<meta property="og:url" content="http://yoursite.com/2017/03/11/visiting-vt-prep/index.html">
+<meta property="og:title" content="注释代码的正确姿势之一：Fortran">
+<meta property="og:url" content="http://yoursite.com/2017/03/19/20170319-Doxygen-md/index.html">
 <meta property="og:site_name" content="九天学者">
-<meta property="og:description" content="只要做好知识和技能的储备，随时都有机会有梦想倾向你。
-
-
-访问国家：美国
-目标高校：弗吉尼亚理工大学(Virginia Tec)，全称是Virginia Polytechnic Institute and State University　　　　　全美实力最强的四大理工学院（麻省理工，加州理工，佐治亚理工学院）
-所在城市：弗吉尼亚州-黑堡(Blacksburg)">
-<meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/vt-logo.png">
-<meta property="og:updated_time" content="2017-03-11T06:49:03.000Z">
+<meta property="og:description" content="相信用过VTK的同学一定对其说明文档很熟悉，并获益不少。他的说明文档是如此的强大，是怎么制作的呢？这将是本文的重点。  
+可能有人会问，做这个文档有啥用？那么我告诉你，有如此问题说明你对计算机程序接触的还很初步，不适合看本文。至少在你没有写过大型程序，或者根本就没用过开源的大型程序。  
+因为对于一个类似于VTK这样的大型函数库，其C++类就有几百个，每个类的功能是什么？如何调用？它有哪些成员变">
+<meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/doxygen_logo.gif">
+<meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/vtk_3.png">
+<meta property="og:updated_time" content="2017-03-18T18:55:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="九天学者-VT访学记之一：前期准备">
-<meta name="twitter:description" content="只要做好知识和技能的储备，随时都有机会有梦想倾向你。
-
-
-访问国家：美国
-目标高校：弗吉尼亚理工大学(Virginia Tec)，全称是Virginia Polytechnic Institute and State University　　　　　全美实力最强的四大理工学院（麻省理工，加州理工，佐治亚理工学院）
-所在城市：弗吉尼亚州-黑堡(Blacksburg)">
-<meta name="twitter:image" content="http://ocp8aowoj.bkt.clouddn.com/vt-logo.png">
+<meta name="twitter:title" content="注释代码的正确姿势之一：Fortran">
+<meta name="twitter:description" content="相信用过VTK的同学一定对其说明文档很熟悉，并获益不少。他的说明文档是如此的强大，是怎么制作的呢？这将是本文的重点。  
+可能有人会问，做这个文档有啥用？那么我告诉你，有如此问题说明你对计算机程序接触的还很初步，不适合看本文。至少在你没有写过大型程序，或者根本就没用过开源的大型程序。  
+因为对于一个类似于VTK这样的大型函数库，其C++类就有几百个，每个类的功能是什么？如何调用？它有哪些成员变">
+<meta name="twitter:image" content="http://ocp8aowoj.bkt.clouddn.com/doxygen_logo.gif">
   
     <link rel="alternative" href="/atom.xml" title="九天学者" type="application/atom+xml">
   
@@ -243,11 +235,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-visiting-vt-prep" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-20170319-Doxygen-md" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/03/11/visiting-vt-prep/" class="article-date">
-      <time datetime="2017-03-11T05:02:56.000Z" itemprop="datePublished">2017-03-11</time>
+      <a href="/2017/03/19/20170319-Doxygen-md/" class="article-date">
+      <time datetime="2017-03-18T18:30:35.000Z" itemprop="datePublished">2017-03-19</time>
 </a>
     </div>
   
@@ -260,7 +252,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      九天学者-VT访学记之一：前期准备
+      注释代码的正确姿势之一：Fortran
     </h1>
   
 
@@ -269,13 +261,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/留学/">留学</a>
+    <a class="article-category-link" href="/categories/科研经验/">科研经验</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/旅行/">旅行</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/美国/">美国</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/doxygen/">doxygen</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/代码注释/">代码注释</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -285,16 +277,14 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <blockquote>
-<p>只要做好知识和技能的储备，随时都有机会有梦想倾向你。</p>
-</blockquote>
-<ul>
-<li><strong>访问国家</strong>：美国</li>
-<li><strong>目标高校</strong>：弗吉尼亚理工大学(<a href="http://search.vt.edu/search/person.html?person=1329805" target="_blank" rel="external">Virginia Tec</a>)，全称是Virginia Polytechnic Institute and State University<br>　　　　　全美实力最强的四大理工学院（麻省理工，加州理工，佐治亚理工学院）</li>
-<li><strong>所在城市</strong>：弗吉尼亚州-黑堡(Blacksburg)<br><img src="http://ocp8aowoj.bkt.clouddn.com/vt-logo.png" alt="vt-logo"></li>
+        <ul>
+<li>相信用过<a href="http://www.vtk.org/doc/release/7.1/html/index.html" target="_blank" rel="external">VTK</a>的同学一定对其说明文档很熟悉，并获益不少。他的说明文档是如此的强大，是怎么制作的呢？这将是本文的重点。  </li>
+<li>可能有人会问，做这个文档有啥用？那么我告诉你，有如此问题说明你对计算机程序接触的还很初步，不适合看本文。至少在你没有写过大型程序，或者根本就没用过开源的大型程序。  </li>
+<li>因为对于一个类似于VTK这样的大型函数库，其C++类就有几百个，每个类的功能是什么？如何调用？它有哪些成员变量？成员函数？类与类之间的关系又是如何？对于这些问题如果没有很好的方法表达，你要看懂几乎是不可能的，更别谈使用和修改了。</li>
+<li>本人最近就在修改/开发一个热液系统模拟的程序，这个程序是Lewis博士用Fortran写的，总共有81和Fortran函数和文件。刚开始接触到这个根本读不下去，简直让人奔溃。后来各种不断的折腾，终于知道怎么用Doxygen自动生成文档了。下面就是我要讲的经验。<br><img src="http://ocp8aowoj.bkt.clouddn.com/doxygen_logo.gif" alt="doxygen_logo"><br><img src="http://ocp8aowoj.bkt.clouddn.com/vtk_3.png" alt="vtk_3"></li>
 </ul>
 <a id="more"></a>
-<h1 id="与导师沟通"><a href="#与导师沟通" class="headerlink" title="与导师沟通"></a>与导师沟通</h1><h1 id="办理签证"><a href="#办理签证" class="headerlink" title="办理签证"></a>办理签证</h1><h1 id="租房"><a href="#租房" class="headerlink" title="租房"></a>租房</h1><h1 id="订机票"><a href="#订机票" class="headerlink" title="订机票"></a>订机票</h1>
+
       
     </div>
     
@@ -302,13 +292,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/03/11/visiting-vt-prep/">九天学者-VT访学记之一：前期准备</a></p>
+        <p><span>本文标题:</span><a href="/2017/03/19/20170319-Doxygen-md/">注释代码的正确姿势之一：Fortran</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 九天学者 的个人博客">九天学者</a></p>
-        <p><span>发布时间:</span>2017年03月11日 - 13时02分</p>
-        <p><span>最后更新:</span>2017年03月11日 - 14时49分</p>
+        <p><span>发布时间:</span>2017年03月19日 - 02时30分</p>
+        <p><span>最后更新:</span>2017年03月19日 - 02时55分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/03/11/visiting-vt-prep/" title="九天学者-VT访学记之一：前期准备">http://yoursite.com/2017/03/11/visiting-vt-prep/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/03/11/visiting-vt-prep/　　作者: 九天学者" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/03/19/20170319-Doxygen-md/" title="注释代码的正确姿势之一：Fortran">http://yoursite.com/2017/03/19/20170319-Doxygen-md/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/03/19/20170319-Doxygen-md/　　作者: 九天学者" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -321,18 +311,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2017/03/19/20170319-Doxygen-md/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          注释代码的正确姿势之一：Fortran
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/03/03/sphinx/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Sphinx炼成记</div>
+    <a href="/2017/03/11/visiting-vt-prep/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">九天学者-VT访学记之一：前期准备</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -343,7 +324,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#与导师沟通"><span class="toc-number">1.</span> <span class="toc-text">与导师沟通</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#办理签证"><span class="toc-number">2.</span> <span class="toc-text">办理签证</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#租房"><span class="toc-number">3.</span> <span class="toc-text">租房</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#订机票"><span class="toc-number">4.</span> <span class="toc-text">订机票</span></a></li></ol>
+    
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -463,7 +444,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2017/03/11/visiting-vt-prep/" data-title="九天学者-VT访学记之一：前期准备" data-url="http://yoursite.com/2017/03/11/visiting-vt-prep/"></div>
+    <div class="ds-thread" data-thread-key="2017/03/19/20170319-Doxygen-md/" data-title="注释代码的正确姿势之一：Fortran" data-url="http://yoursite.com/2017/03/19/20170319-Doxygen-md/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -486,13 +467,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/03/19/20170319-Doxygen-md/" title="上一篇: 注释代码的正确姿势之一：Fortran">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2017/03/03/sphinx/" title="下一篇: Sphinx炼成记">
+            <a href="/2017/03/11/visiting-vt-prep/" title="下一篇: 九天学者-VT访学记之一：前期准备">
                 <i class="fa fa-angle-right"></i>
             </a>
         
