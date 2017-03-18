@@ -17,7 +17,7 @@
 因为对于一个类似于VTK这样的大型函数库，其C++类就有几百个，每个类的功能是什么？如何调用？它有哪些成员变">
 <meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/doxygen_logo.gif">
 <meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/vtk_3.png">
-<meta property="og:updated_time" content="2017-03-18T18:55:58.000Z">
+<meta property="og:updated_time" content="2017-03-18T19:27:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="注释代码的正确姿势之一：Fortran">
 <meta name="twitter:description" content="相信用过VTK的同学一定对其说明文档很熟悉，并获益不少。他的说明文档是如此的强大，是怎么制作的呢？这将是本文的重点。  
@@ -281,10 +281,19 @@
 <li>相信用过<a href="http://www.vtk.org/doc/release/7.1/html/index.html" target="_blank" rel="external">VTK</a>的同学一定对其说明文档很熟悉，并获益不少。他的说明文档是如此的强大，是怎么制作的呢？这将是本文的重点。  </li>
 <li>可能有人会问，做这个文档有啥用？那么我告诉你，有如此问题说明你对计算机程序接触的还很初步，不适合看本文。至少在你没有写过大型程序，或者根本就没用过开源的大型程序。  </li>
 <li>因为对于一个类似于VTK这样的大型函数库，其C++类就有几百个，每个类的功能是什么？如何调用？它有哪些成员变量？成员函数？类与类之间的关系又是如何？对于这些问题如果没有很好的方法表达，你要看懂几乎是不可能的，更别谈使用和修改了。</li>
-<li>本人最近就在修改/开发一个热液系统模拟的程序，这个程序是Lewis博士用Fortran写的，总共有81和Fortran函数和文件。刚开始接触到这个根本读不下去，简直让人奔溃。后来各种不断的折腾，终于知道怎么用Doxygen自动生成文档了。下面就是我要讲的经验。<br><img src="http://ocp8aowoj.bkt.clouddn.com/doxygen_logo.gif" alt="doxygen_logo"><br><img src="http://ocp8aowoj.bkt.clouddn.com/vtk_3.png" alt="vtk_3"></li>
+<li>本人最近就在修改/开发一个热液系统模拟的程序，这个程序是Lewis博士用Fortran写的，总共有81和Fortran函数和文件。刚开始接触到这个根本读不下去，简直让人奔溃。后来各种不断的折腾，终于知道怎么用<a href="http://www.stack.nl/~dimitri/doxygen/download.html" target="_blank" rel="external">Doxygen</a>自动生成文档了。下面就是我要讲的经验。<br><img src="http://ocp8aowoj.bkt.clouddn.com/doxygen_logo.gif" alt="doxygen_logo"><br><img src="http://ocp8aowoj.bkt.clouddn.com/vtk_3.png" alt="vtk_3"></li>
 </ul>
 <a id="more"></a>
-
+<h1 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h1><p>在Mac的终端输入命令：<code>brew install doxygen</code>即可。</p>
+<h2 id="Graphviz"><a href="#Graphviz" class="headerlink" title="Graphviz"></a><a href="http://www.graphviz.org" target="_blank" rel="external">Graphviz</a></h2><p>这是配合Doxygen一起使用自动生成函数/类之间依赖关系图的工具。<br>可以在官网上<a href="http://www.pixelglow.com/graphviz/download/" target="_blank" rel="external">下载GUI版</a>，也可以使用brw安装：<code>brew install graphviz</code>。<br>摘要里面的依赖图就是用这个做出来的。</p>
+<h2 id="MathjAX"><a href="#MathjAX" class="headerlink" title="MathjAX"></a><a href="https://github.com/mathjax/MathJax.git" target="_blank" rel="external">MathjAX</a></h2><p>这个是为了在注释过程中书写数学公式，这个一般是网络版服务器上用的，但也可以下载到本地使用。利用如下命令安装：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo git <span class="built_in">clone</span> https://github.com/mathjax/MathJax.git /opt/MathJax</div></pre></td></tr></table></figure></p>
+<p>将这个安装地址填入配置文件中的<code>MATHJAX_RELPATH</code>参数（如下）。</p>
+<ul>
+<li><strong>注释中的使用：</strong> <code>\f$ \alpha + \eta \f$</code>，使用<code>\f$</code>括起来，书写是与Latex一致的。</li>
+</ul>
+<h1 id="配置使用"><a href="#配置使用" class="headerlink" title="配置使用"></a>配置使用</h1><p>对于一个新的项目，只需要在终端输入命令<code>doxygen -s -g</code>即可，会自动生成一个以<a href="ttp://ocp8aowoj.bkt.clouddn.com/Doxyfile" target="_blank" rel="external">Doxyfile</a>为文件名的配置文件。这里的-s命令是生成一个简化的版本，如果去掉这个参数则会生成一个完整的。然后在配置文件里面修改参数即可。主要的几个参数如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">PROJECT_NAME           = FISHES</div><div class="line">PROJECT_NUMBER         = 1.3</div><div class="line">OUTPUT_DIRECTORY       = ../fortran/FISHES</div><div class="line">EXTRACT_ALL            = YES</div><div class="line">EXTRACT_STATIC         = YES</div><div class="line">EXTRACT_LOCAL_CLASSES  = YES</div><div class="line"><span class="comment"># 使用graphviz</span></div><div class="line">HAVE_DOT               = YES</div><div class="line">CALL_GRAPH             = YES</div><div class="line">CALLER_GRAPH           = YES</div><div class="line">DOT_IMAGE_FORMAT       = svg</div><div class="line"><span class="comment"># 使用mathjax</span></div><div class="line">USE_MATHJAX            = YES</div><div class="line">MATHJAX_RELPATH        = /opt/MathJax</div><div class="line"><span class="comment"># 使用Markdown（主页等）和fortran 90</span></div><div class="line">FILE_PATTERNS          = *.c \</div><div class="line">                         *.md \</div><div class="line">                         *.f90 \</div></pre></td></tr></table></figure></p>
+<h1 id="Fortran注释规范"><a href="#Fortran注释规范" class="headerlink" title="Fortran注释规范"></a>Fortran注释规范</h1><p>参考<a href="http://www.dougdevel.org/index.php" target="_blank" rel="external">DOUG</a>，这是个很好的学习素材。将其代码下载，然后稍微修改一下配置文件（<code>INPUT</code>）即可生成文档。下面是我在使用过程中的总结。</p>
+<h2 id="普通注释"><a href="#普通注释" class="headerlink" title="普通注释"></a>普通注释</h2><figure class="highlight fortran"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">!&gt; 这是个普通注释</span></div></pre></td></tr></table></figure>
       
     </div>
     
@@ -295,7 +304,7 @@
         <p><span>本文标题:</span><a href="/2017/03/19/20170319-Doxygen-md/">注释代码的正确姿势之一：Fortran</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 九天学者 的个人博客">九天学者</a></p>
         <p><span>发布时间:</span>2017年03月19日 - 02时30分</p>
-        <p><span>最后更新:</span>2017年03月19日 - 02时55分</p>
+        <p><span>最后更新:</span>2017年03月19日 - 03时27分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/03/19/20170319-Doxygen-md/" title="注释代码的正确姿势之一：Fortran">http://yoursite.com/2017/03/19/20170319-Doxygen-md/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/03/19/20170319-Doxygen-md/　　作者: 九天学者" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -324,7 +333,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#下载安装"><span class="toc-number">1.</span> <span class="toc-text">下载安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Graphviz"><span class="toc-number">1.1.</span> <span class="toc-text">Graphviz</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MathjAX"><span class="toc-number">1.2.</span> <span class="toc-text">MathjAX</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置使用"><span class="toc-number">2.</span> <span class="toc-text">配置使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Fortran注释规范"><span class="toc-number">3.</span> <span class="toc-text">Fortran注释规范</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#普通注释"><span class="toc-number">3.1.</span> <span class="toc-text">普通注释</span></a></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -476,7 +485,7 @@
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/19/20170319-Doxygen-md/">注释代码的正确姿势之一：Fortran</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/visiting-vt-prep/">九天学者-VT访学记之一：前期准备</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/sphinx/">Sphinx炼成记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/mac_research/">如何在Mac下愉快的做科研</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/04/20170104/">热液流体循环演化的数值模拟</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/28/PythonandGMT/">强大的Python与GMT</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731Brandon2016/">洋中脊段是由斜向地幔离散造成的</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731EnceladusHotSpring/">土卫2上的热泉</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/figure_python/">Python精美作图</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/SCI_Python/">Python数据分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/30/20160731/">气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/secondTest/">如何优雅的整理笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/new-blog/">Sublime Text 3使用技巧之（二：常用插件）</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/19/20170319-Doxygen-md/">注释代码的正确姿势之一：Fortran</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/visiting-vt-prep/">九天学者-VT访学记之一：前期准备</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/sphinx/">Sphinx炼成记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/mac_research/">如何在Mac下愉快的做科研</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/04/20170104/">热液流体循环演化的数值模拟</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/28/PythonandGMT/">强大的Python与GMT</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731Brandon2016/">洋中脊段是由斜向地幔离散造成的</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731EnceladusHotSpring/">土卫2上的热泉</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/figure_python/">Python精美作图</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/SCI_Python/">Python数据分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/30/20160731/">气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/new-blog/">Sublime Text 3使用技巧之（二：常用插件）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/secondTest/">如何优雅的整理笔记</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
