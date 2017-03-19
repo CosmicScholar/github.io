@@ -17,7 +17,7 @@
 因为对于一个类似于VTK这样的大型函数库，其C++类就有几百个，每个类的功能是什么？如何调用？它有哪些成员变">
 <meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/doxygen_logo.gif">
 <meta property="og:image" content="http://ocp8aowoj.bkt.clouddn.com/vtk_3.png">
-<meta property="og:updated_time" content="2017-03-18T19:42:13.000Z">
+<meta property="og:updated_time" content="2017-03-19T14:36:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="注释代码的正确姿势之一：Fortran">
 <meta name="twitter:description" content="相信用过VTK的同学一定对其说明文档很熟悉，并获益不少。他的说明文档是如此的强大，是怎么制作的呢？这将是本文的重点。  
@@ -283,7 +283,7 @@
 <li>因为对于一个类似于VTK这样的大型函数库，其C++类就有几百个，每个类的功能是什么？如何调用？它有哪些成员变量？成员函数？类与类之间的关系又是如何？对于这些问题如果没有很好的方法表达，你要看懂几乎是不可能的，更别谈使用和修改了。</li>
 <li>本人最近就在修改/开发一个热液系统模拟的程序，这个程序是Lewis博士用Fortran写的，总共有81和Fortran函数和文件。刚开始接触到这个根本读不下去，简直让人奔溃。后来各种不断的折腾，终于知道怎么用<a href="http://www.stack.nl/~dimitri/doxygen/download.html" target="_blank" rel="external">Doxygen</a>自动生成文档了。下面就是我要讲的经验。  </li>
 </ul>
-<div align="center"><img src="http://ocp8aowoj.bkt.clouddn.com/doxygen_logo.gif"></div><br><div align="center"><img src="http://ocp8aowoj.bkt.clouddn.com/vtk_3.png"></div>
+<h1 id="fatiando-document"><a href="#fatiando-document" class="headerlink" title="fatiando document"></a><a href="http://cosscholar.coding.me/fatiando_doc/" target="_blank" rel="external">fatiando document</a></h1><div align="center"><img src="http://ocp8aowoj.bkt.clouddn.com/doxygen_logo.gif"></div><br><div align="center"><img src="http://ocp8aowoj.bkt.clouddn.com/vtk_3.png"></div>
 
 <a id="more"></a>
 <h1 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h1><p>在Mac的终端输入命令：<code>brew install doxygen</code>即可。</p>
@@ -306,7 +306,7 @@
         <p><span>本文标题:</span><a href="/2017/03/19/20170319-Doxygen-md/">注释代码的正确姿势之一：Fortran</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 九天学者 的个人博客">九天学者</a></p>
         <p><span>发布时间:</span>2017年03月19日 - 02时30分</p>
-        <p><span>最后更新:</span>2017年03月19日 - 03时42分</p>
+        <p><span>最后更新:</span>2017年03月19日 - 22时36分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/03/19/20170319-Doxygen-md/" title="注释代码的正确姿势之一：Fortran">http://yoursite.com/2017/03/19/20170319-Doxygen-md/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/03/19/20170319-Doxygen-md/　　作者: 九天学者" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -335,7 +335,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#下载安装"><span class="toc-number">1.</span> <span class="toc-text">下载安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Graphviz"><span class="toc-number">1.1.</span> <span class="toc-text">Graphviz</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MathjAX"><span class="toc-number">1.2.</span> <span class="toc-text">MathjAX</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置使用"><span class="toc-number">2.</span> <span class="toc-text">配置使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Fortran注释规范"><span class="toc-number">3.</span> <span class="toc-text">Fortran注释规范</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#普通注释"><span class="toc-number">3.1.</span> <span class="toc-text">普通注释</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#fatiando-document"><span class="toc-number">1.</span> <span class="toc-text">fatiando document</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#下载安装"><span class="toc-number">2.</span> <span class="toc-text">下载安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Graphviz"><span class="toc-number">2.1.</span> <span class="toc-text">Graphviz</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MathjAX"><span class="toc-number">2.2.</span> <span class="toc-text">MathjAX</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#配置使用"><span class="toc-number">3.</span> <span class="toc-text">配置使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Fortran注释规范"><span class="toc-number">4.</span> <span class="toc-text">Fortran注释规范</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#普通注释"><span class="toc-number">4.1.</span> <span class="toc-text">普通注释</span></a></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -430,7 +430,7 @@
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/19/20170319-Doxygen-md/">注释代码的正确姿势之一：Fortran</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/visiting-vt-prep/">九天学者-VT访学记之一：前期准备</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/sphinx/">Sphinx炼成记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/mac_research/">如何在Mac下愉快的做科研</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/04/20170104/">热液流体循环演化的数值模拟</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/28/PythonandGMT/">强大的Python与GMT</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731Brandon2016/">洋中脊段是由斜向地幔离散造成的</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731EnceladusHotSpring/">土卫2上的热泉</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/figure_python/">Python精美作图</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/SCI_Python/">Python数据分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/30/20160731/">气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/secondTest/">如何优雅的整理笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/new-blog/">Sublime Text 3使用技巧之（二：常用插件）</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/19/20170319-Doxygen-md/">注释代码的正确姿势之一：Fortran</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/visiting-vt-prep/">九天学者-VT访学记之一：前期准备</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/sphinx/">Sphinx炼成记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/mac_research/">如何在Mac下愉快的做科研</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/04/20170104/">热液流体循环演化的数值模拟</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/28/PythonandGMT/">强大的Python与GMT</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731Brandon2016/">洋中脊段是由斜向地幔离散造成的</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/20160731EnceladusHotSpring/">土卫2上的热泉</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/SCI_Python/">Python数据分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/figure_python/">Python精美作图</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/30/20160731/">气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/new-blog/">Sublime Text 3使用技巧之（二：常用插件）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/secondTest/">如何优雅的整理笔记</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
