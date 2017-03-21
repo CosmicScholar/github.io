@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>如何优雅的整理笔记 | 九天学者</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="优雅的版面，支持云同步，支持Latex，支持代码高亮等满足这一系列要求，但又不想折腾个人博客搭载，所以选择了Evernote配合马克飞象写笔记。方便自己回忆，也方便分享、讨论，得益于Seisman的博客，以后有机会也会给自己搭建一个个人博客把整理的笔记都挂上去。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何优雅的整理笔记">
+<meta property="og:url" content="http://yoursite.com/2016/07/29/2016-07-29-HowWirteNote/index.html">
+<meta property="og:site_name" content="九天学者">
+<meta property="og:description" content="优雅的版面，支持云同步，支持Latex，支持代码高亮等满足这一系列要求，但又不想折腾个人博客搭载，所以选择了Evernote配合马克飞象写笔记。方便自己回忆，也方便分享、讨论，得益于Seisman的博客，以后有机会也会给自己搭建一个个人博客把整理的笔记都挂上去。">
+<meta property="og:image" content="http://yoursite.com/uploads/PrattModel.png">
+<meta property="og:updated_time" content="2017-03-21T11:00:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何优雅的整理笔记">
+<meta name="twitter:description" content="优雅的版面，支持云同步，支持Latex，支持代码高亮等满足这一系列要求，但又不想折腾个人博客搭载，所以选择了Evernote配合马克飞象写笔记。方便自己回忆，也方便分享、讨论，得益于Seisman的博客，以后有机会也会给自己搭建一个个人博客把整理的笔记都挂上去。">
+<meta name="twitter:image" content="http://yoursite.com/uploads/PrattModel.png">
+  
+    <link rel="alternative" href="/atom.xml" title="九天学者" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/logo.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/gzk.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">九天学者</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">Knowledge is Power</p>
+        
+        
+            <form>
+                <input type="text" class="st-default-search-input search" id="search" placeholder=" Search...">
+            </form>
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">首页</a></li>
+                        
+                            <li><a href="/archives">档案</a></li>
+                        
+                            <li><a href="/tags">分类</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="mailto:zhikuiguo@cug.edu.cn" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/CosmicScholar" title="github">github</a>
+                            
+                                <a class="fl weibo" target="_blank" href="http://weibo.com/u/2004357835/home?wvr=5" title="weibo">weibo</a>
+                            
+                                <a class="fl wechat" target="_blank" href="/Gzk1207" title="wechat">wechat</a>
+                            
+                                <a class="fl ResearchGate" target="_blank" href="https://www.researchgate.net/profile/Zhikui_Guo2" title="ResearchGate">ResearchGate</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/Evernote/" style="font-size: 10px;">Evernote</a> <a href="/tags/GMT/" style="font-size: 10px;">GMT</a> <a href="/tags/Mac/" style="font-size: 15px;">Mac</a> <a href="/tags/Python/" style="font-size: 20px;">Python</a> <a href="/tags/Sphinx/" style="font-size: 10px;">Sphinx</a> <a href="/tags/SublimeText/" style="font-size: 10px;">SublimeText</a> <a href="/tags/doxygen/" style="font-size: 10px;">doxygen</a> <a href="/tags/代码注释/" style="font-size: 10px;">代码注释</a> <a href="/tags/优美作图/" style="font-size: 15px;">优美作图</a> <a href="/tags/地球动力学/" style="font-size: 15px;">地球动力学</a> <a href="/tags/地球物理/" style="font-size: 10px;">地球物理</a> <a href="/tags/数据分析/" style="font-size: 10px;">数据分析</a> <a href="/tags/旅行/" style="font-size: 10px;">旅行</a> <a href="/tags/洋中脊/" style="font-size: 15px;">洋中脊</a> <a href="/tags/热液/" style="font-size: 10px;">热液</a> <a href="/tags/美国/" style="font-size: 10px;">美国</a> <a href="/tags/马克飞象/" style="font-size: 10px;">马克飞象</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://coding.net/user">coding</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://cosmicscholar.github.io/">github</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.fatiando.org/docs.html">fatiando</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://cosscholar.coding.me/fatiando_doc/">fatiando_doc</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">中国地质大学（武汉）地球物理学在读博士：爱好编程、支持开源</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">九天学者</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/gzk.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">九天学者</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">Knowledge is Power</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">首页</a></li>
+                
+                    <li><a href="/archives">档案</a></li>
+                
+                    <li><a href="/tags">分类</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="mailto:zhikuiguo@cug.edu.cn" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/CosmicScholar" title="github">github</a>
+                    
+                        <a class="weibo" target="_blank" href="http://weibo.com/u/2004357835/home?wvr=5" title="weibo">weibo</a>
+                    
+                        <a class="wechat" target="_blank" href="/Gzk1207" title="wechat">wechat</a>
+                    
+                        <a class="ResearchGate" target="_blank" href="https://www.researchgate.net/profile/Zhikui_Guo2" title="ResearchGate">ResearchGate</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-2016-07-29-HowWirteNote" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/29/2016-07-29-HowWirteNote/" class="article-date">
+      <time datetime="2016-07-29T13:06:00.000Z" itemprop="datePublished">2016-07-29</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      如何优雅的整理笔记
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/科研经验/">科研经验</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Evernote/">Evernote</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/马克飞象/">马克飞象</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <blockquote>
+<p>优雅的版面，支持云同步，支持Latex，支持代码高亮等满足这一系列要求，但又不想折腾个人博客搭载，所以选择了<strong><a href="https://www.yinxiang.com/" target="_blank" rel="external">Evernote</a></strong>配合<strong><a href="https://maxiang.io/" target="_blank" rel="external">马克飞象</a></strong>写笔记。方便自己回忆，也方便分享、讨论，得益于<strong><a href="https://seisman.info/" target="_blank" rel="external">Seisman</a></strong>的博客，以后有机会也会给自己搭建一个个人博客把整理的笔记都挂上去。 </p>
+</blockquote>
+<a id="more"></a>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
+<p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    —— <a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="external">维基百科</a></p>
+</blockquote>
+<h3 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    —— [<span class="string">维基百科</span>](<span class="link">https://zh.wikipedia.org/wiki/Markdown</span>)</div></pre></td></tr></table></figure>
+<h2 id="LaTeX-公式"><a href="#LaTeX-公式" class="headerlink" title="$\LaTeX{}$ 公式"></a>$\LaTeX{}$ 公式</h2><p>行内公式$y=x^2$，块级公式：<br>$$<br>\vartriangle g(k) = 2\pi G(\rho_c-\rho_w)e^{-kd}\sum_{n=1}^\infty \dfrac{k^{n-1}}{n!}\Im{h^n(x)}<br>$$</p>
+<h3 id="源码-1"><a href="#源码-1" class="headerlink" title="源码"></a>源码</h3><p>使用两个<code>$$</code>将$\LaTeX$公式代码括起来即可，行内公式使用一个<code>$</code><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$$\vartriangle g(k) = 2\pi G(\rho<span class="emphasis">_c-\rho w) e^&#123;-kd&#125; \sum_</span>&#123;n=1&#125;^&#123;\infty&#125; \dfrac&#123;k^&#123;n-1&#125;&#125;&#123;n!&#125;\Im\&#123;h^n(x)\&#125;$$</div></pre></td></tr></table></figure></p>
+<h2 id="图片-标题"><a href="#图片-标题" class="headerlink" title="图片+标题"></a>图片+标题</h2><p><img src="/uploads/PrattModel.png" alt="Pratt模型 | center|600x0"></p>
+<h2 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># -*- coding: utf-8 -*-</span></div><div class="line"><span class="string">"""</span></div><div class="line">--------简单挠曲模型重力异常导纳曲线：P181，fig5.7，eq5.13</div><div class="line">--------郭志馗，2016/7/19，杭州</div><div class="line">--------参考文献：A. B. Watts，2001</div><div class="line">--------------------修改说明------------------------------------</div><div class="line">1. 量纲：s^-2=10^8 mGal km^-1</div><div class="line">----------------------------------------------------------------</div><div class="line"></div><div class="line">"""</div><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><span class="keyword">import</span> matplotlib</div><div class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</div><div class="line"><span class="keyword">from</span> matplotlib.font_manager <span class="keyword">import</span> fontManager</div><div class="line"><span class="keyword">from</span> matplotlib.font_manager <span class="keyword">import</span> FontProperties</div><div class="line"><span class="keyword">from</span> os <span class="keyword">import</span> path</div><div class="line"><span class="keyword">from</span> matplotlib.ticker <span class="keyword">import</span>  MultipleLocator</div><div class="line"><span class="keyword">from</span> matplotlib.ticker <span class="keyword">import</span>  FormatStrFormatter</div><div class="line"></div><div class="line"><span class="comment">#配置字典设置</span></div><div class="line"><span class="comment">#	print path.abspath(matplotlib.matplotlib_fname())	#当前使用的配置文件</span></div><div class="line">matplotlib.rcParams[<span class="string">"figure.autolayout"</span>]=<span class="string">"TRUE"</span>	<span class="comment">#图片边距</span></div><div class="line">matplotlib.rcParams[<span class="string">"font.family"</span>]=<span class="string">"Times New Roman"</span></div><div class="line">matplotlib.rcParams[<span class="string">"text.color"</span>]=<span class="string">"black"</span></div><div class="line">matplotlib.rcParams[<span class="string">"axes.linewidth"</span>]=<span class="string">"2"</span>				<span class="comment">#坐标轴线宽</span></div><div class="line">matplotlib.rcParams[<span class="string">"font.size"</span>]=<span class="string">"16"</span></div><div class="line">matplotlib.rcParams[<span class="string">"xtick.major.size"</span>]=<span class="number">10</span>				<span class="comment">#xtick设置</span></div><div class="line">matplotlib.rcParams[<span class="string">"xtick.minor.size"</span>]=<span class="number">5</span></div><div class="line">matplotlib.rcParams[<span class="string">"xtick.major.width"</span>]=<span class="number">2</span></div><div class="line">matplotlib.rcParams[<span class="string">"xtick.minor.width"</span>]=<span class="number">1</span></div><div class="line">matplotlib.rcParams[<span class="string">"ytick.major.size"</span>]=<span class="number">10</span>				<span class="comment">#ytick设置</span></div><div class="line">matplotlib.rcParams[<span class="string">"ytick.minor.size"</span>]=<span class="number">5</span></div><div class="line">matplotlib.rcParams[<span class="string">"ytick.major.width"</span>]=<span class="number">2</span></div><div class="line">matplotlib.rcParams[<span class="string">"ytick.minor.width"</span>]=<span class="number">1</span></div><div class="line">matplotlib.rcParams[<span class="string">"lines.linewidth"</span>]=<span class="number">3</span>				<span class="comment">#设置线条</span></div><div class="line">matplotlib.rcParams[<span class="string">"mathtext.default"</span>]=<span class="string">"regular"</span>		<span class="comment">#公式字体:tt, it, rm, cal, sf, bf or default/regular (non-math)</span></div><div class="line"><span class="comment">#------------------------下面正式绘图----------------------------</span></div><div class="line"><span class="comment">#参数</span></div><div class="line">G=<span class="number">6.67</span>*<span class="number">10</span>**<span class="number">-11</span>			<span class="comment">#m3 kg-1 s-2</span></div><div class="line">den_c=<span class="number">2800</span>				<span class="comment">#kg/m3</span></div><div class="line">den_2=<span class="number">2800</span></div><div class="line">den_3=<span class="number">2800</span></div><div class="line">den_m=<span class="number">3350</span></div><div class="line">den_w=<span class="number">1030</span>				<span class="comment">#kg/m3	</span></div><div class="line">d=<span class="number">4.500</span>					<span class="comment">#km</span></div><div class="line">t=<span class="number">7.1</span></div><div class="line">Te=<span class="number">5</span>					<span class="comment">#km</span></div><div class="line">E=<span class="number">10</span>**<span class="number">11</span>				<span class="comment">#N m^-2</span></div><div class="line">v=<span class="number">0.25</span></div><div class="line">g=<span class="number">9.8</span>					<span class="comment">#m s^-2</span></div><div class="line"><span class="comment">#函数</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_func_Zk</span><span class="params">(den_c,d,k,t)</span>:</span>								<span class="comment">#非均衡地形的重力异常导纳</span></div><div class="line">	Zk=<span class="number">2</span>*np.pi*G*(den_c-den_w)*np.exp(-k*d)*<span class="number">10</span>**<span class="number">8</span></div><div class="line">	<span class="keyword">return</span> Zk</div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_func_ZK_Airy</span><span class="params">(t,k,d)</span>:</span>									<span class="comment">#Airy模型的重力异常导纳</span></div><div class="line">	Zk=<span class="number">2</span>*np.pi*G*(den_c-den_w)*np.exp(-k*d)*(<span class="number">1</span>-np.exp(-k*t))*<span class="number">10</span>**<span class="number">8</span></div><div class="line">	<span class="keyword">return</span> Zk</div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_func_ZK_Airy_hidden</span><span class="params">(t,k,d,den_2)</span>:</span>									<span class="comment">#Airy模型的重力异常导纳</span></div><div class="line">	Zk=<span class="number">2</span>*np.pi*G*(den_2-den_w)*np.exp(-k*d)*(<span class="number">1</span>-np.exp(-k*t))*<span class="number">10</span>**<span class="number">8</span></div><div class="line">	<span class="keyword">return</span> Zk</div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_func_t</span><span class="params">(Tc,d,den_2,den_3)</span>:</span></div><div class="line">	t=Tc-d*((den_m-den_w)/(den_m-den_c))</div><div class="line">	<span class="comment">#t=Tc-d*((den_2-den_w)/(den_m-den_3))</span></div><div class="line">	<span class="keyword">return</span> t</div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_func_D</span><span class="params">(Te)</span>:</span></div><div class="line">	D=E*Te**<span class="number">3</span>/<span class="number">12.0</span>/(<span class="number">1</span>-v**<span class="number">2</span>)</div><div class="line">	<span class="keyword">return</span> D</div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_func_zk_flex</span><span class="params">(Te,k,g,d,t)</span>:</span></div><div class="line">	D=_func_D(Te)</div><div class="line">	phi_ekp=<span class="number">1.0</span>/(D*k**<span class="number">4</span>/(den_m-den_c)/g*<span class="number">10</span>**<span class="number">-3</span>+<span class="number">1</span>)</div><div class="line">	Zk_flex=<span class="number">2</span>*np.pi*G*(den_c-den_w)*np.exp(-k*d)*(<span class="number">1</span>-phi_ekp*np.exp(-k*t))</div><div class="line">	<span class="keyword">return</span> Zk_flex*<span class="number">10</span>**<span class="number">8</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">_func_zk_pratt</span><span class="params">(k,Dcp)</span>:</span></div><div class="line">	zk_pratt=<span class="number">2</span>*np.pi*G*(den_c-den_w)*np.exp(-k*d)*(<span class="number">1</span>-np.exp(-k*Dcp))</div><div class="line">	<span class="keyword">return</span> zk_pratt*<span class="number">10</span>**<span class="number">8</span></div><div class="line"><span class="comment">#1. 图片基本设置：大小，字体等</span></div><div class="line">plt.figure(figsize=(<span class="number">9</span>,<span class="number">6</span>))</div><div class="line"></div><div class="line">k=np.linspace(<span class="number">0.0001</span>,<span class="number">0.25</span>,<span class="number">500</span>)</div><div class="line"><span class="comment">#计算挠曲模型</span></div><div class="line">Te=<span class="number">5</span></div><div class="line">zk_flex1=_func_zk_flex(Te,k,g,d,t)</div><div class="line">plt.plot(k,zk_flex1)</div><div class="line">plt.text(<span class="number">0.03</span>,_func_zk_flex(Te,<span class="number">0.03</span>,g,d,t)+<span class="number">23</span>,<span class="string">"Flexure ($T_&#123;e&#125;\ =$"</span>+str(Te)+<span class="string">" km)"</span>,ha=<span class="string">"left"</span>,va=<span class="string">"top"</span>,rotation=<span class="number">60</span>)</div><div class="line">Te=<span class="number">25</span></div><div class="line">zk_flex1=_func_zk_flex(Te,k,g,d,t)</div><div class="line">plt.plot(k,zk_flex1)</div><div class="line">plt.text(<span class="number">0.012</span>,_func_zk_flex(Te,<span class="number">0.012</span>,g,d,t)+<span class="number">20</span>,<span class="string">"Flexure ($T_&#123;e&#125;\ =$"</span>+str(Te)+<span class="string">" km)"</span>,ha=<span class="string">"left"</span>,va=<span class="string">"top"</span>,rotation=<span class="number">83</span>)</div><div class="line"><span class="comment">#计算Airy模型</span></div><div class="line">zk_airy=_func_ZK_Airy(t,k,d)</div><div class="line">line_airy,=plt.plot(k,zk_airy)</div><div class="line">dashes = [<span class="number">8</span>, <span class="number">3</span>, <span class="number">30</span>, <span class="number">3</span>]  <span class="comment"># 10 points on, 5 off, 100 on, 5 off</span></div><div class="line">line_airy.set_dashes(dashes)</div><div class="line">plt.text(<span class="number">0.125</span>,_func_ZK_Airy(t,<span class="number">0.125</span>,d)<span class="number">-2</span>,<span class="string">"Airy (t = "</span>+str(t)+<span class="string">" km)"</span>,ha=<span class="string">"left"</span>,va=<span class="string">"top"</span>,rotation=<span class="number">-3</span>)</div><div class="line"><span class="comment">#添加Pratt模型</span></div><div class="line">Dcp=<span class="number">113.2</span></div><div class="line">zk_pratt=_func_zk_pratt(k,Dcp)</div><div class="line">plt.plot(k,zk_pratt,<span class="string">":"</span>)</div><div class="line">plt.annotate(<span class="string">"Pratt ($D_&#123;c&#125;^&#123;\\textasciiacute&#125;$ = "</span>+str(Dcp)+<span class="string">"km)"</span>, xy=(<span class="number">0.015</span>, _func_zk_pratt(<span class="number">0.015</span>,Dcp)),</div><div class="line">                xytext=(<span class="number">0.05</span>, <span class="number">74</span>),</div><div class="line">				va=<span class="string">"center"</span>,</div><div class="line">				ha=<span class="string">"left"</span>,</div><div class="line">                bbox=dict(boxstyle=<span class="string">"round"</span>, fc=(<span class="number">1.</span>, <span class="number">0.8</span>, <span class="number">0.8</span>),ec=<span class="string">"none"</span>),</div><div class="line">                arrowprops=dict(arrowstyle=<span class="string">"fancy"</span>,</div><div class="line">                                fc=(<span class="number">1.</span>, <span class="number">0.8</span>, <span class="number">0.8</span>), ec=<span class="string">"none"</span>,</div><div class="line">                                <span class="comment">#patchB=el,</span></div><div class="line">                                connectionstyle=<span class="string">"arc3,rad=0.4"</span>),</div><div class="line">                )</div><div class="line"><span class="comment">#添加一个非均衡地形的重力异常导纳</span></div><div class="line">plt.plot(k,_func_Zk(den_c,d,k,t),<span class="string">'k--'</span>)</div><div class="line">plt.text(<span class="number">0.14</span>,_func_Zk(den_c,d,<span class="number">0.14</span>,t)<span class="number">-2</span>,<span class="string">"Uncompensated: t = "</span>+str(t)+<span class="string">" km"</span>,ha=<span class="string">"left"</span>,va=<span class="string">"center"</span>,rotation=<span class="number">-17</span>)</div><div class="line"><span class="comment">#label</span></div><div class="line">plt.ylabel(<span class="string">"Admittance $Z(k)(mGal\ km^&#123;-1&#125;)$"</span>)</div><div class="line">plt.xlabel(<span class="string">"Wavenumber k ($km^&#123;-1&#125;$)"</span>)</div><div class="line">plt.text(<span class="number">0.18</span>,<span class="number">73</span>,<span class="string">"d = "</span>+str(d)+<span class="string">" km\nt = "</span>+str(t)+<span class="string">" km\n$\\rho_&#123;c&#125;\ =\ "</span>+str(den_c)+<span class="string">"\ kg/m^3$\n$\\rho_&#123;m&#125;$ = "</span>+str(den_m)+<span class="string">"\n$\\rho_&#123;w&#125;$ = "</span>+str(den_w),ha=<span class="string">"left"</span>,va=<span class="string">"top"</span>)</div><div class="line"></div><div class="line"><span class="comment">#设置另一个x轴</span></div><div class="line">xaxis_wavelength=plt.twiny()</div><div class="line">xaxis_wavelength.set_xlabel(<span class="string">u"波长(km)"</span>,fontdict=&#123;<span class="string">"family"</span>: <span class="string">"STKaiti"</span>&#125;)</div><div class="line">xaxis_wavelength.set_xlim(k[<span class="number">0</span>],k[len(k)<span class="number">-1</span>])</div><div class="line">labels=[<span class="number">30</span>,<span class="number">40</span>,<span class="number">50</span>,<span class="number">100</span>,<span class="number">200</span>,<span class="number">1000</span>]</div><div class="line">labels_x=[]</div><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,len(labels)):</div><div class="line">	labels_x.append(np.pi*<span class="number">2.0</span>/labels[i])</div><div class="line">plt.xticks(labels_x,labels)</div><div class="line"><span class="comment">#设置</span></div><div class="line"><span class="comment"># plt.show()</span></div><div class="line">plt.savefig(<span class="string">u"pdf\\简单挠曲模型重力异常导纳曲线.pdf"</span>)</div><div class="line">plt.savefig(<span class="string">u"png\\简单挠曲模型重力异常导纳曲线.png"</span>,dpi=<span class="number">300</span>)</div></pre></td></tr></table></figure>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>看这绘制表格的功能也真是有点无奈，也就绘制个简单的表格还行<br>| 岩石圈参数        |    常用值            |    表示符号    |    单位            |<br>|:——-                |——–                    |                    |                    |<br>|密度                |$2800    $                |    $\rho_c$    |$kg/m^3$    |<br>|样式模量            |$10^{11}$            |    $E$            |    $N/m^2$    |</p>
+<h3 id="源码-2"><a href="#源码-2" class="headerlink" title="源码"></a>源码</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">| 岩石圈参数		|	常用值			|	表示符号		|	单位		|</div><div class="line">|:-------		|--------			|				|			|</div><div class="line">|密度			|$2800	$			|	$\rho_c$	|$kg/m^3$	|</div><div class="line">|样式模量			|$10^&#123;11&#125;$			|	$E$			|	$N/m^2$	|</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/07/29/2016-07-29-HowWirteNote/">如何优雅的整理笔记</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 九天学者 的个人博客">九天学者</a></p>
+        <p><span>发布时间:</span>2016年07月29日 - 21时06分</p>
+        <p><span>最后更新:</span>2017年03月21日 - 19时00分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/07/29/2016-07-29-HowWirteNote/" title="如何优雅的整理笔记">http://yoursite.com/2016/07/29/2016-07-29-HowWirteNote/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/07/29/2016-07-29-HowWirteNote/　　作者: 九天学者" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2016/07/30/2016-07-30-paper-nature-olive2015/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/07/29/2016-07-29-sublime/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Sublime Text 3使用技巧之（二：常用插件）</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#引用"><span class="toc-number">1.</span> <span class="toc-text">引用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#源码"><span class="toc-number">1.1.</span> <span class="toc-text">源码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LaTeX-公式"><span class="toc-number">2.</span> <span class="toc-text">$\LaTeX{}$ 公式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#源码-1"><span class="toc-number">2.1.</span> <span class="toc-text">源码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片-标题"><span class="toc-number">3.</span> <span class="toc-text">图片+标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码高亮"><span class="toc-number">4.</span> <span class="toc-text">代码高亮</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表格"><span class="toc-number">5.</span> <span class="toc-text">表格</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#源码-2"><span class="toc-number">5.1.</span> <span class="toc-text">源码</span></a></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+<div class="share">
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+    <a href="#" class="bds_copy" data-cmd="copy" title="复制网址"></a>
+    <a href="#" class="bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+    </div>
+    <script>
+        window._bd_share_config={
+            "common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+</div>
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/07/29/2016-07-29-HowWirteNote/" data-title="如何优雅的整理笔记" data-url="http://yoursite.com/2016/07/29/2016-07-29-HowWirteNote/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"null"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/07/30/2016-07-30-paper-nature-olive2015/" title="上一篇: 气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2016/07/29/2016-07-29-sublime/" title="下一篇: Sublime Text 3使用技巧之（二：常用插件）">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/19/2017-03-19-Doxygen/">注释代码的正确姿势之一：Fortran</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/2017-03-11-visiting-vt-prep/">九天学者-VT访学记之一：前期准备</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/2017-03-03-sphinx/">Sphinx炼成记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/2017-03-03-mac_research/">如何在Mac下愉快的做科研</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/28/2016-09-28-python_gmt/">强大的Python与GMT</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/2016-08-30-paper-Brandon2016/">洋中脊段是由斜向地幔离散造成的</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/30/2016-08-30-paper-Gabriel/">土卫2上的热泉</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/2016-08-03-matplotlib/">Python精美作图</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/03/2016-08-03-python-dataAnalysis/">Python数据分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/30/2016-07-30-paper-nature-olive2015/">气候驱动的海水深度变化对洋中脊岩浆供应波动的敏感度</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/2016-07-29-HowWirteNote/">如何优雅的整理笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/2016-07-29-sublime/">Sublime Text 3使用技巧之（二：常用插件）</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2017 九天学者
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >博客访问量: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 7;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+    <script type="text/javascript">
+      window.onload = function(){
+        document.getElementById("search").onclick = function(){
+            console.log("search")
+            search();
+        }
+      }
+      function search(){
+        (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+        (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+        e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+        })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+        _st('install','A1Pz-LKMXbrzcFg2FWi6','2.0.0');
+      }
+    </script>
+
+  </div>
+</body>
+</html>
+
+<a href="https://github.com/CosmicScholar"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://ocp8aowoj.bkt.clouddn.com/fockmeGithub.png" alt="Fork me on GitHub" data-canonical-src="http://ocp8aowoj.bkt.clouddn.com/fockmeGithub.png"></a>
+
+<a href="https://coding.net/u/CosScholar/p/CosScholar.coding.me"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://ocp8aowoj.bkt.clouddn.com/fockCoding0.png" alt="Fork me on Coding" data-canonical-src="http://ocp8aowoj.bkt.clouddn.com/fockCoding0.png"></a>

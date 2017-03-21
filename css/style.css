@@ -2788,8 +2788,8 @@ color
   background: none;
 }
 .article-entry code {
-  color: #999;
-  background: #002b36;
+  color: #f00;
+  background: rgba(255,255,255,0.7);
   padding: 1px 3px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -3279,7 +3279,7 @@ color
   padding: 10px 10px;
   overflow: auto;
   color: #4c4c4c;
-  line-height: 22.400000000000002px;
+  line-height: 25.6px;
 }
 .article-entry .highlight .gutter pre,
 .article-entry .gist .gist-file .gist-data .line-numbers {
@@ -3343,8 +3343,8 @@ color
   text-shadow: none;
 }
 .article-entry .highlight .line {
-  font-size: 14px;
-  height: 22.400000000000002px;
+  font-size: 16px;
+  height: 25.6px;
 }
 .article-entry .gist {
   margin: 0 -20px;
