@@ -107,7 +107,7 @@
     <link href="http://yoursite.com/2017/03/03/2017-03-03-sphinx/"/>
     <id>http://yoursite.com/2017/03/03/2017-03-03-sphinx/</id>
     <published>2017-03-03T12:29:46.000Z</published>
-    <updated>2017-03-21T11:20:57.000Z</updated>
+    <updated>2017-03-21T17:44:46.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://matplotlib.org/_static/logo2.svg" alt="hydrothermal"></p>
 <blockquote>
@@ -169,6 +169,7 @@
 <ul>
 <li>配置sphinx工程<br>打开你的sphinx工程的配置文件<code>conf.py</code>中最后添加<code>html_search_language = zh_CN</code>或者<code>language = &#39;zh&#39;</code>。</li>
 </ul>
+<h1 id="6-th-网页美化"><a href="#6-th-网页美化" class="headerlink" title="$6^{th}$: 网页美化"></a>$6^{th}$: 网页美化</h1><p>我个人比较喜欢<a href="https://github.com/ryan-roemer/sphinx-bootstrap-theme" target="_blank" rel="external">bootstrap</a>主题，而这个主题也有很多方案可供选择，比如<a href="http://bootswatch.com/cerulean/" target="_blank" rel="external">cerulean</a>，<a href="http://bootswatch.com/sandstone/" target="_blank" rel="external">Sandstone</a>和<a href="http://bootswatch.com/slate/" target="_blank" rel="external">Slate</a>等，这些都是一些CSS模板。最有意思的是这个网站免费提供网页上各种组件的代码和主题，比如按钮、进度条等。是<a href="http://bootswatch.com" target="_blank" rel="external">Bootswatch</a>，他将一些组件已经列出来了，只需要点击<code>&lt;&gt;</code>按钮就可以显示代码，将代码复制过来放在rst文件中的<code>.. raw:: html</code>下方即可，记得空一行然后tab缩进。看下图，我的网页效果。<br><img src="http://ocp8aowoj.bkt.clouddn.com/bootstrap_example.png" alt="bootstrap_example"></p>
 ]]></content>
     
     <summary type="html">
@@ -436,9 +437,9 @@
     
       <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
     
-      <category term="数据分析" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
-    
       <category term="优美作图" scheme="http://yoursite.com/tags/%E4%BC%98%E7%BE%8E%E4%BD%9C%E5%9B%BE/"/>
+    
+      <category term="数据分析" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
     
   </entry>
   
