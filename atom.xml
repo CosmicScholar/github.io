@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-07T17:11:56.341Z</updated>
+  <updated>2018-09-07T21:16:58.100Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2018/09/07/post_17/"/>
     <id>http://yoursite.com/2018/09/07/post_17/</id>
     <published>2018-09-07T17:05:00.000Z</published>
-    <updated>2018-09-07T17:11:56.341Z</updated>
+    <updated>2018-09-07T21:16:58.100Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>相信理工科方面的科研人员经常会遇到做三维切片图的时候，以地球物理为例，比如重力、磁异常三维反演，地震速度剖面+地形图，热液循环三维数值模拟（CFD范畴），地球动力学三维模拟等。当然了做三维切片图也有<strong>商业软件</strong>(比如<a href="https://www.tecplot.com/products/tecplot-360/" target="_blank" rel="external">Tecplot 360</a>)和<strong>开源软件</strong>（比如<a href="https://www.paraview.org" target="_blank" rel="external">Paraview</a>），前者缺点是收费收费收费，后者导出的三维场景图效果很差（不是矢量图，colorbar位置错乱等问题），其优点是做现场演示。还有我最喜欢的编程语言<a href="https://matplotlib.org" target="_blank" rel="external">python</a>也可以做这个工作，但是我觉得它对坐标轴的label处理的不是那么完美，但也是个不错的选择。<strong>我的原则</strong>就是用<strong>开源的程序或者软件做出最漂亮最简洁并且高质量</strong>(本人追求矢量的eps、pdf、ps格式)<strong>的学术论文图</strong>。经过我四年的不断折腾和筛选，发现到目前为止，<a href="http://gmt.soest.hawaii.edu/doc/5.4.4/index.html" target="_blank" rel="external">GMT 6.0</a>最新版（我是直接从<a href="https://github.com/GenericMappingTools/gmt" target="_blank" rel="external">github</a>克隆下来的开发版）对三维图支持已经非常棒了。不仅可以做<a href="待添加">三维地形图</a>（上面标注文字，数据点，线，legend等），还可以做切片的等值线图或者image。</p>
@@ -28,6 +28,7 @@
 <p><strong>一贯的风格：先来一段回顾和概述，然后提出问题，再解决问题，最后点评一下存在的问题或可选方案</strong></p>
 <h1 id="提出问题"><a href="#提出问题" class="headerlink" title="提出问题"></a>提出问题</h1><p>这种图在什么情况下使用？直接上图感受一下</p>
 <p><img src="https://upload-images.jianshu.io/upload_images/7316098-3dcdd93c05410360.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Olive, et al., 2015, Science"></p>
+<a id="more"></a>
 <p><img src="https://upload-images.jianshu.io/upload_images/7316098-3bb3e2dfd322f0da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Schmid F. and Schlindwein V., 2016, G3"></p>
 <p><img src="https://upload-images.jianshu.io/upload_images/7316098-b6fed46781638260.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Zhao, et al., 2013, G3"></p>
 <h1 id="GMT如何实现三维切片图"><a href="#GMT如何实现三维切片图" class="headerlink" title="GMT如何实现三维切片图"></a>GMT如何实现三维切片图</h1><p>gmt新版推出的三维成图主要通过<strong>-p</strong>和<strong>-JZ</strong>实现的。前者进行旋转，后者给定垂向轴相关信息。gmt官网上有个<a href="http://gmt.soest.hawaii.edu/doc/latest/gallery/users_contrib_script/vertical_slice.html#vertical-slice" target="_blank" rel="external">用户给出的例子</a>，但是没有讲清楚这个切片图到底如何准确实现，但是还是有借鉴意义的。因为本人的博士课题有部分数据涉密，不方面放上来，就以上面提到的这个例子里面的函数造一个数据进行成图。</p>
@@ -87,7 +88,11 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;相信理工科方面的科研人员经常会遇到做三维切片图的时候，以地球物理为例，比如重力、磁异常三维反演，地震速度剖面+地形图，热液循环三维数值模拟（CFD范畴），地球动力学三维模拟等。当然了做三维切片图也有&lt;strong&gt;商业软件&lt;/strong&gt;(比如&lt;
+&lt;p&gt;相信理工科方面的科研人员经常会遇到做三维切片图的时候，以地球物理为例，比如重力、磁异常三维反演，地震速度剖面+地形图，热液循环三维数值模拟（CFD范畴），地球动力学三维模拟等。当然了做三维切片图也有&lt;strong&gt;商业软件&lt;/strong&gt;(比如&lt;a href=&quot;https://www.tecplot.com/products/tecplot-360/&quot;&gt;Tecplot 360&lt;/a&gt;)和&lt;strong&gt;开源软件&lt;/strong&gt;（比如&lt;a href=&quot;https://www.paraview.org&quot;&gt;Paraview&lt;/a&gt;），前者缺点是收费收费收费，后者导出的三维场景图效果很差（不是矢量图，colorbar位置错乱等问题），其优点是做现场演示。还有我最喜欢的编程语言&lt;a href=&quot;https://matplotlib.org&quot;&gt;python&lt;/a&gt;也可以做这个工作，但是我觉得它对坐标轴的label处理的不是那么完美，但也是个不错的选择。&lt;strong&gt;我的原则&lt;/strong&gt;就是用&lt;strong&gt;开源的程序或者软件做出最漂亮最简洁并且高质量&lt;/strong&gt;(本人追求矢量的eps、pdf、ps格式)&lt;strong&gt;的学术论文图&lt;/strong&gt;。经过我四年的不断折腾和筛选，发现到目前为止，&lt;a href=&quot;http://gmt.soest.hawaii.edu/doc/5.4.4/index.html&quot;&gt;GMT 6.0&lt;/a&gt;最新版（我是直接从&lt;a href=&quot;https://github.com/GenericMappingTools/gmt&quot;&gt;github&lt;/a&gt;克隆下来的开发版）对三维图支持已经非常棒了。不仅可以做&lt;a href=&quot;待添加&quot;&gt;三维地形图&lt;/a&gt;（上面标注文字，数据点，线，legend等），还可以做切片的等值线图或者image。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;一贯的风格：先来一段回顾和概述，然后提出问题，再解决问题，最后点评一下存在的问题或可选方案&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;提出问题&quot;&gt;&lt;a href=&quot;#提出问题&quot; class=&quot;headerlink&quot; title=&quot;提出问题&quot;&gt;&lt;/a&gt;提出问题&lt;/h1&gt;&lt;p&gt;这种图在什么情况下使用？直接上图感受一下&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload-images.jianshu.io/upload_images/7316098-3dcdd93c05410360.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;Olive, et al., 2015, Science&quot;&gt;&lt;/p&gt;
     
     </summary>
     
